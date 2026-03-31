@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="650" height="200" viewBox="0 0 650 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Monogramm -->
+  <rect x="40" y="40" width="120" height="120" rx="15"
+        fill="none" stroke="#00838f" stroke-width="6"/>
+  <text x="100" y="115" text-anchor="middle"
+        font-size="60" font-family="Georgia"
+        fill="#00838f" font-weight="bold">&lt;/&gt;</text>
+
+  <!-- Text -->
+<text x="200" y="105" font-size="68"
+        font-family="Inter, Arial, sans-serif" font-weight="700"
+        fill="#1c1917">Murix</text>
+  <line x1="200" y1="120" x2="480" y2="120"
+        stroke="#1c1917" stroke-width="2"/>
+  <text x="200" y="150" font-size="20"
+        font-family="Inter, Arial, sans-serif" fill="#57534e"
+        letter-spacing="2">Website Design &amp; SEO</text>
+</svg>

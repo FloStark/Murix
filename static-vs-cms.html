@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Pages vs CMS – Was ist besser für Ihre Website? | Murix</title>
+    <meta name="description"
+        content="Static Pages oder CMS (WordPress)? Wir erklären die Unterschiede, Vorteile und Kosten – damit Sie die richtige Entscheidung treffen.">
+    <meta name="keywords"
+        content="Static Website vs CMS, WordPress Alternative, statische Website, Static Pages, CMS Vergleich">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://murix.at/static-vs-cms">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="logo.svg" alt="Murix" class="logo-img"></a>
+                        <ul class="nav-links" id="navLinks">
+                <li class="nav-dropdown">
+                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Services</span>
+                            <a href="webdesign-graz.html">Webdesign Graz</a>
+                            <a href="seo-graz.html">SEO Graz</a>
+                            <a href="webdesign-steiermark.html">Webdesign Steiermark</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">IT-Services</span>
+                            <a href="microsoft-365.html">Microsoft 365 für KMU</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Branchen</span>
+                            <a href="webdesign-handwerker.html">Handwerker</a>
+                            <a href="webdesign-aerzte.html">Ärzte &amp; Therapeuten</a>
+                            <a href="webdesign-gastronomie.html">Gastronomie</a>
+                            <a href="webdesign-immobilien.html">Immobilien</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Ratgeber</span>
+                            <a href="was-kostet-eine-website.html">Was kostet eine Website?</a>
+                            <a href="website-erstellen-lassen.html">Website erstellen lassen</a>
+                            <a href="static-vs-cms.html">Static vs CMS</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#vorteile" class="nav-link">Vorteile</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#preise" class="nav-link">Preise</a></li>
+                <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                <li><a href="javascript:void(0)" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"
+                aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="subpage-hero">
+        <div class="container">
+            <div class="subpage-hero-content reveal">
+                <span class="section-tag">Ratgeber</span>
+                <h1 class="hero-title">Static Pages vs CMS:<br><span class="text-gradient-animated">Was ist
+                        besser?</span></h1>
+                <p class="hero-subtitle">Brauchen Sie WordPress? Oder reicht eine statische Website? Wir erklären den
+                    Unterschied – verständlich und ehrlich.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section subpage-content">
+        <div class="container">
+            <div class="content-layout">
+                <div class="content-main reveal">
+                    <h2>Was sind Static Pages?</h2>
+                    <p>Eine statische Website besteht aus fertigen HTML-Dateien. Wenn ein Besucher die Website aufruft,
+                        wird die Seite sofort ausgeliefert – <strong>ohne Datenbank, ohne Server-Berechnungen, ohne
+                            unnötige Technik</strong>.</p>
+                    <p>Das Ergebnis: Die Website lädt in Bruchteilen einer Sekunde, ist extrem sicher und kostet
+                        praktisch nichts im Betrieb.</p>
+
+                    <h2>Was ist ein CMS?</h2>
+                    <p>Ein CMS (Content Management System) wie WordPress speichert alle Inhalte in einer Datenbank.
+                        Jedes Mal, wenn jemand Ihre Website besucht, wird die Seite erst zusammengebaut: Template +
+                        Datenbank = fertige Seite.</p>
+                    <p>Der Vorteil: Sie können Inhalte selbst bearbeiten, über ein Admin-Dashboard im Browser. Der
+                        Nachteil: mehr Technik, mehr Wartung, mehr Kosten.</p>
+
+                    <h3>Der direkte Vergleich</h3>
+                    <div class="info-table reveal">
+                        <div class="info-table-row header"><span>Kriterium</span><span>Static Pages</span><span>CMS
+                                (WordPress)</span></div>
+                        <div class="info-table-row"><span><strong>Ladezeit</strong></span><span>Blitzschnell
+                                (&lt;1s)</span><span>Langsamer (2-5s)</span></div>
+                        <div class="info-table-row"><span><strong>Sicherheit</strong></span><span>Maximal (kein
+                                Angriffspunkt)</span><span>Anfällig (regelmäßige Updates nötig)</span></div>
+                        <div class="info-table-row"><span><strong>Laufende Kosten</strong></span><span>0€ (Kein Abo-Zwang)</span><span>€15-50/Monat</span></div>
+                        <div class="info-table-row"><span><strong>SEO</strong></span><span>Perfekt</span><span>Gut (mit
+                                Plugins)</span></div>
+                        <div class="info-table-row"><span><strong>Selbst bearbeiten</strong></span><span>Nein (wir
+                                machen das)</span><span>Ja (Dashboard)</span></div>
+                        <div class="info-table-row"><span><strong>Updates
+                                    nötig</strong></span><span>Nein</span><span>Ja, regelmäßig</span></div>
+                        <div class="info-table-row"><span><strong>Hosting</strong></span><span>Kostenlos
+                                möglich</span><span>€5-20/Monat</span></div>
+                    </div>
+
+                    <h3>Wann sind Static Pages die richtige Wahl?</h3>
+                    <ul class="styled-list">
+                        <li>Firmenwebsite, die sich selten ändert</li>
+                        <li>Landingpage für eine Dienstleistung</li>
+                        <li>Portfolio oder Visitenkarte im Web</li>
+                        <li>Maximale Performance und Sicherheit gewünscht</li>
+                        <li>Kein Abo-Zwang gewünscht</li>
+                    </ul>
+
+                    <h3>Wann ist ein CMS besser?</h3>
+                    <ul class="styled-list">
+                        <li>Sie veröffentlichen regelmäßig Blog-Beiträge</li>
+                        <li>Sie wollen Inhalte selbst ändern (täglich/wöchentlich)</li>
+                        <li>Sie haben einen Online-Shop</li>
+                        <li>Sie brauchen Benutzerkonten oder Login-Bereiche</li>
+                    </ul>
+
+                    <h3>Unsere Empfehlung</h3>
+                    <p>Für <strong>90% unserer Kunden</strong> sind Static Pages die bessere Wahl. Wenn Sie jedoch
+                        regelmäßig Inhalte selbst bearbeiten wollen, richten wir gerne ein CMS für Sie ein – <a
+                            href="index.html#preise">als Zusatzoption ab €400</a>.</p>
+                </div>
+                <aside class="content-sidebar reveal" data-delay="200">
+                    <div class="sidebar-cta">
+                        <h3>Nicht sicher?</h3>
+                        <p>Wir beraten Sie kostenlos, welche Lösung für Sie die richtige ist.</p>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Kostenlos beraten
+                                lassen</span></a>
+                    </div>
+                    <div class="sidebar-links">
+                        <h4>Verwandte Artikel</h4>
+                        <ul>
+                            <li><a href="was-kostet-eine-website.html">Was kostet eine Website?</a></li>
+                            <li><a href="website-erstellen-lassen.html">Website erstellen lassen</a></li>
+                            <li><a href="webdesign-graz.html">Webdesign in Graz</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box reveal">
+                <div class="cta-orbs">
+                    <div class="cta-orb"></div>
+                    <div class="cta-orb"></div>
+                </div>
+                <span class="section-tag">Entscheidung leicht gemacht</span>
+                <h2>Wir beraten Sie. Kostenlos.</h2>
+                <p>Static oder CMS – im Erstgespräch finden wir die beste Lösung für Sie.</p>
+                <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Erstgespräch buchen</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="footer-logo-link"><img src="favicon.svg"
+                            alt="Murix" class="footer-logo-icon"><span class="footer-logo-text">MURIX</span></a>
+                    <p>Webdesign, SEO & IT-Dienstleistungen aus Graz.<br>Websites zum Festpreis. Microsoft 365 für KMU.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="webdesign-graz.html">Webdesign Graz</a></li>
+                        <li><a href="seo-graz.html">SEO Graz</a></li>
+                        <li><a href="webdesign-steiermark.html">Webdesign Steiermark</a></li>
+                        <li><a href="microsoft-365.html">Microsoft 365 für KMU</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="mailto:hello@murix.at">hello@murix.at</a></li>
+                        <li><span>Waltendorfer Hauptstraße 84B</span></li>
+                        <li><span>8010 Graz, Steiermark</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Murix. Mit ☕ in Graz gemacht.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
+    Cal("init", "30min", {origin:"https://app.cal.eu"});
+    </script>
+    <!-- Cal element-click embed code ends -->
+
+</body>
+
+</html>

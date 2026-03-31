@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murix – Webdesign & SEO aus Graz | Ihre Website zum Festpreis</title>
-    <meta name="description" content="Murix aus Graz: Professionelles Webdesign und SEO zum Festpreis. Fertige Website ohne laufende Kosten. Lassen Sie sich begeistern!">
-    <meta name="keywords" content="Webdesign Graz, SEO Graz, Website erstellen, Webdesign Steiermark, SEO Agentur, Murix">
+    <title>Murix – Webdesign, SEO & IT-Dienstleistungen aus Graz | Websites & Microsoft 365 für KMU</title>
+    <meta name="description"
+        content="Murix aus Graz: Professionelles Webdesign, SEO und IT-Dienstleistungen (Microsoft 365) für KMU. Fertige Website zum Festpreis + moderne Cloud-IT ohne eigene Server.">
+    <meta name="keywords"
+        content="Webdesign Graz, SEO Graz, Website erstellen, Webdesign Steiermark, SEO Agentur, Microsoft 365 Graz, IT-Dienstleistungen KMU, Cloud IT, Murix">
     <meta name="author" content="Murix">
     <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Murix – Webdesign & SEO aus Graz">
-    <meta property="og:description" content="Professionelles Webdesign und SEO zum Festpreis. Keine laufenden Kosten.">
+    <meta property="og:title" content="Murix – Webdesign, SEO & IT für KMU aus Graz">
+    <meta property="og:description"
+        content="Professionelles Webdesign, SEO und Microsoft 365 für KMU. Websites zum Festpreis + Cloud-IT ohne eigene Server.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_AT">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <!-- Stylesheet -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Murix",
-        "description": "Webdesign und SEO Agentur aus Graz",
+        "description": "Webdesign, SEO und IT-Dienstleistungen für KMU aus Graz. Websites zum Festpreis und Microsoft 365 Betreuung.",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Waltendorfer Hauptstraße 84B",
+            "postalCode": "8010",
             "addressLocality": "Graz",
             "addressRegion": "Steiermark",
             "addressCountry": "AT"
         },
         "url": "https://murix.at",
-        "priceRange": "€€",
-        "serviceArea": {
-            "@type": "Place",
-            "name": "Österreich"
-        }
+        "email": "hello@murix.at",
+        "priceRange": "€€"
     }
     </script>
 </head>
+
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
     <!-- ==================== NAVIGATION ==================== -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <span class="logo-icon">M</span>
-                <span class="logo-text">MURIX</span>
+                <img src="logo.svg" alt="Murix – Website Design & SEO" class="logo-img">
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
+                <li class="nav-dropdown">
+                    <a href="#leistungen" class="nav-link">Leistungen <svg class="dropdown-arrow" width="10" height="10"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Services</span>
+                            <a href="webdesign-graz.html">Webdesign Graz</a>
+                            <a href="seo-graz.html">SEO Graz</a>
+                            <a href="webdesign-steiermark.html">Webdesign Steiermark</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">IT-Services</span>
+                            <a href="microsoft-365.html">Microsoft 365 für KMU</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Branchen</span>
+                            <a href="webdesign-handwerker.html">Handwerker</a>
+                            <a href="webdesign-aerzte.html">Ärzte & Therapeuten</a>
+                            <a href="webdesign-gastronomie.html">Gastronomie</a>
+                            <a href="webdesign-immobilien.html">Immobilien</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Ratgeber</span>
+                            <a href="was-kostet-eine-website.html">Was kostet eine Website?</a>
+                            <a href="website-erstellen-lassen.html">Website erstellen lassen</a>
+                            <a href="static-vs-cms.html">Static vs CMS</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#vorteile" class="nav-link">Vorteile</a></li>
-                <li><a href="#prozess" class="nav-link">Prozess</a></li>
+                <li><a href="#prozess" class="nav-link">So funktioniert's</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#ueber-uns" class="nav-link">Über uns</a></li>
-                <li><a href="#kontakt" class="nav-link nav-cta">Kontakt</a></li>
+                <li><a href="#preise" class="nav-link">Preise</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+                <li><a href="#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a>
+                </li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
                 <span></span>
@@ -71,52 +110,122 @@
 
     <!-- ==================== HERO ==================== -->
     <section class="hero" id="hero">
-        <canvas id="heroCanvas"></canvas>
-        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <div class="hero-gradient-orb orb-1"></div>
+            <div class="hero-gradient-orb orb-2"></div>
+            <div class="hero-gradient-orb orb-3"></div>
+            <div class="hero-grid-pattern"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Webdesign & SEO aus Graz
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">Ihre Website.</span>
-                <span class="title-line title-accent" id="typingTarget">Perfekt. Fertig. Murix.</span>
+            <h1 class="hero-title reveal-hero" style="--delay: 0.15s">
+                Wir bauen <span class="typewriter" id="typewriter">Websites</span>,<br>
+                die <span class="text-gradient-animated">Kunden bringen.</span>
             </h1>
-            <p class="hero-subtitle">
-                Wir erstellen Websites, die begeistern – und sorgen dafür, dass Sie online gefunden werden.
-                <strong>Zum Festpreis. Ohne laufende Kosten.</strong>
+            <p class="hero-subtitle reveal-hero" style="--delay: 0.3s">
+                Professionelles Webdesign & SEO zum Festpreis – plus IT-Dienstleistungen mit Microsoft 365 für KMU.
+                <strong>Kein Abo-Zwang, 100% Eigentum am Code, maximale Freiheit.</strong>
             </p>
-            <div class="hero-ctas">
-                <a href="#kontakt" class="btn btn-primary">
-                    <span>Projekt starten</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <div class="hero-ctas reveal-hero" style="--delay: 0.45s">
+                <a href="#kontakt" class="btn btn-primary magnetic" data-cal-link="murix/30min"
+                    data-cal-namespace="30min"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                    <span>Kostenloses Erstgespräch</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                 </a>
-                <a href="#leistungen" class="btn btn-ghost">
-                    <span>Mehr erfahren</span>
+                <a href="#portfolio" class="btn btn-outline magnetic">
+                    <span>Projekte ansehen</span>
                 </a>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Projekte</span>
+            <div class="hero-trust reveal-hero" style="--delay: 0.6s">
+                <div class="trust-text">
+                    <span><span class="trust-stars">✦</span> Support-Anfragen <strong>innerhalb von 24h</strong>
+                        beantwortet</span>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
-                    <span class="stat-label">Zufriedenheit</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-target="0">0</span><span class="stat-suffix">€</span>
-                    <span class="stat-label">Laufende Kosten</span>
+                <div class="trust-text">
+                    <span><span class="trust-stars">✦</span> Schnelle Hilfe bei <strong>kritischen Problemen</strong></span>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== MARQUEE ==================== -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>Webdesign</span><span class="marquee-dot">✦</span>
+                <span>SEO</span><span class="marquee-dot">✦</span>
+                <span>Microsoft 365</span><span class="marquee-dot">✦</span>
+                <span>Google Ranking</span><span class="marquee-dot">✦</span>
+                <span>Responsive</span><span class="marquee-dot">✦</span>
+                <span>Cloud IT</span><span class="marquee-dot">✦</span>
+                <span>Festpreis</span><span class="marquee-dot">✦</span>
+                <span>Kein Abo-Zwang *</span><span class="marquee-dot">✦</span>
+                <span>Made in Graz</span><span class="marquee-dot">✦</span>
+                <span>Webdesign</span><span class="marquee-dot">✦</span>
+                <span>SEO</span><span class="marquee-dot">✦</span>
+                <span>Microsoft 365</span><span class="marquee-dot">✦</span>
+                <span>Google Ranking</span><span class="marquee-dot">✦</span>
+                <span>Responsive</span><span class="marquee-dot">✦</span>
+                <span>Cloud IT</span><span class="marquee-dot">✦</span>
+                <span>Festpreis</span><span class="marquee-dot">✦</span>
+                <span>Kein Abo-Zwang *</span><span class="marquee-dot">✦</span>
+                <span>Made in Graz</span><span class="marquee-dot">✦</span>
             </div>
-            <span>Scrollen</span>
+        </div>
+    </div>
+
+    <!-- ==================== VORTEILE (& LÖSUNG) ==================== -->
+    <section class="section hook-section" id="vorteile">
+        <div class="container">
+            <div class="hook-grid">
+                <div class="hook-text reveal">
+                    <span class="section-tag">Ihr Mehrwert</span>
+                    <h2 class="section-title">Moderne Websites & IT,<br><span class="text-gradient-animated">die einfach funktionieren.</span></h2>
+                    <p>Konzentrieren Sie sich auf Ihr Kerngeschäft, während wir Ihren digitalen Auftritt und Ihre IT auf das nächste Level heben. Wir setzen auf Transparenz, Performance und nachhaltige Lösungen.</p>
+                </div>
+                <div class="hook-cards reveal" data-delay="200">
+                    <div class="pain-card">
+                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <line x1="12" y1="1" x2="12" y2="23" />
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg></div>
+                        <h4>Faire Festpreise</h4>
+                        <p>Volle Kostentransparenz von Anfang an. Faire Einmalpreise sorgen für Planungssicherheit – ohne versteckte Gebühren oder verpflichtende Abos.</p>
+                    </div>
+                    <div class="pain-card">
+                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg></div>
+                        <h4>Sichtbar bei Google</h4>
+                        <p>Wir bauen blitzschnelle Websites mit modernstem SEO. So werden Sie von Ihren Kunden gefunden und hinterlassen digital einen bleibenden Eindruck.</p>
+                    </div>
+                    <div class="pain-card">
+                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                            </svg></div>
+                        <h4>Modernes Arbeiten</h4>
+                        <p>Nutzen Sie die Vorteile der Cloud. Wir begleiten Sie bei der Einführung von Microsoft 365, für effizientes Arbeiten von überall aus.</p>
+                    </div>
+                    <div class="pain-card solution">
+                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg></div>
+                        <h4>Ihr Partner aus Graz</h4>
+                        <p>Persönliche Betreuung auf Augenhöhe. Webdesign, SEO und IT-Support – Sie haben einen direkten Ansprechpartner für alle digitalen Belange.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -124,147 +233,193 @@
     <section class="section leistungen" id="leistungen">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Was wir machen</span>
-                <h2 class="section-title">Unsere <span class="text-gradient">Leistungen</span></h2>
-                <p class="section-subtitle">Zwei Disziplinen, ein Ziel: Ihr Erfolg im Internet.</p>
+                <span class="section-tag">Unsere Leistungen</span>
+                <h2 class="section-title">Alles, was Sie brauchen.<br><span class="text-gradient-animated">Nichts, was
+                        Sie nicht brauchen.</span></h2>
+                <p class="section-subtitle">Von der Website bis zur IT-Infrastruktur – alles aus einer Hand.</p>
             </div>
             <div class="services-grid">
-                <!-- Webdesign Card -->
                 <div class="service-card reveal" data-delay="0">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                            <path d="M7 8l3 3-3 3"/>
-                            <line x1="13" y1="14" x2="17" y2="14"/>
+                    <div class="service-number">01</div>
+                    <div class="service-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
                         </svg>
                     </div>
-                    <h3 class="service-title">Webdesign</h3>
-                    <p class="service-desc">Maßgeschneiderte Websites mit modernem Design, perfekter Responsivität und blitzschneller Performance. Ihre digitale Visitenkarte – zum Festpreis.</p>
-                    <ul class="service-features">
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Individuelles Design
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Mobile-optimiert
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Schnelle Ladezeiten
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            SSL-verschlüsselt
-                        </li>
+                    <h3>Webdesign</h3>
+                    <p>Individuelle, moderne Websites die begeistern. Mobile-optimiert, blitzschnell und auf Ihre Marke
+                        zugeschnitten.</p>
+                    <ul class="service-list">
+                        <li>Individuelles Design</li>
+                        <li>100% Responsive</li>
+                        <li>Schnelle Ladezeiten</li>
+                        <li>SSL-Verschlüsselung</li>
+                        <li>DSGVO-konform</li>
                     </ul>
-                    <a href="#kontakt" class="service-link">
-                        Jetzt anfragen
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
                 </div>
-
-                <!-- SEO Card -->
-                <div class="service-card reveal" data-delay="200">
-                    <div class="service-card-glow"></div>
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"/>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                            <line x1="8" y1="11" x2="14" y2="11"/>
-                            <line x1="11" y1="8" x2="11" y2="14"/>
+                <div class="service-card reveal" data-delay="150">
+                    <div class="service-number">02</div>
+                    <div class="service-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
                         </svg>
                     </div>
-                    <h3 class="service-title">SEO</h3>
-                    <p class="service-desc">Suchmaschinenoptimierung, die Ergebnisse liefert. Wir bringen Ihre Website nach vorne – lokal in Graz und überregional in ganz Österreich.</p>
-                    <ul class="service-features">
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Keyword-Analyse
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            OnPage-Optimierung
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Lokales SEO (Graz)
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            Content-Strategie
-                        </li>
+                    <h3>SEO</h3>
+                    <p>Suchmaschinenoptimierung, damit Sie auf Google gefunden werden. Lokal in Graz und österreichweit.
+                    </p>
+                    <ul class="service-list">
+                        <li>Keyword-Analyse</li>
+                        <li>OnPage-Optimierung</li>
+                        <li>Lokales SEO (Graz)</li>
+                        <li>Google Business Profil</li>
+                        <li>Content-Strategie</li>
                     </ul>
-                    <a href="#kontakt" class="service-link">
-                        Jetzt anfragen
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
+                </div>
+                <div class="service-card featured reveal" data-delay="300">
+                    <div class="featured-badge">Beliebtestes Paket</div>
+                    <div class="service-number">03</div>
+                    <div class="service-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <h3>Komplett-Paket</h3>
+                    <p>Webdesign + SEO in einem. Vom ersten Entwurf bis zum #1 Ranking – wir übernehmen alles.</p>
+                    <ul class="service-list">
+                        <li>Alles aus Webdesign</li>
+                        <li>Alles aus SEO</li>
+                        <li>Texterstellung inklusive</li>
+                        <li>Laufende Betreuung optional</li>
+                        <li>Prioritäts-Support</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="450">
+                    <div class="service-number">04</div>
+                    <div class="service-icon-wrap">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                        </svg>
+                    </div>
+                    <h3>Microsoft 365 für KMU</h3>
+                    <p>Moderne IT für Ihr Unternehmen: E-Mail, Teamwork und Cloud-Speicher – alles an einem Ort, ohne
+                        eigene Server.</p>
+                    <ul class="service-list">
+                        <li>E-Mail & Kalender (Outlook)</li>
+                        <li>Teams & Zusammenarbeit</li>
+                        <li>OneDrive Cloud-Speicher</li>
+                        <li>Einrichtung & Migration</li>
+                        <li>Schulung & laufender Support</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== VORTEILE ==================== -->
-    <section class="section vorteile" id="vorteile">
+    <!-- ==================== STATS BANNER ==================== -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Fertige Projekte</span>
+                </div>
+                <div class="stat-item reveal" data-delay="100">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Kundenzufriedenheit</span>
+                </div>
+                <div class="stat-item reveal" data-delay="200">
+                    <span class="stat-number" data-target="0">0</span><span class="stat-suffix">€ *</span>
+                    <span class="stat-label">Kein Abo-Zwang bei Static Pages</span>
+                </div>
+                <div class="stat-item reveal" data-delay="300">
+                    <span class="stat-number" data-target="7">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Tage bis zur Website</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATIC vs CMS ==================== -->
+    <section class="section static-vs-cms" id="technologie">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Warum Murix</span>
-                <h2 class="section-title">Ihre <span class="text-gradient">Vorteile</span></h2>
-                <p class="section-subtitle">Kein Stress. Keine laufenden Kosten. Nur Ihre perfekte Website.</p>
+                <span class="section-tag">Unser Ansatz</span>
+                <h2 class="section-title">Static Pages: <span class="text-gradient-animated">Unser Kerngeschäft</span>
+                </h2>
+                <p class="section-subtitle">Schneller, sicherer, günstiger – und ohne laufende Kosten.</p>
             </div>
-            <div class="vorteile-grid">
-                <div class="vorteil-card reveal" data-delay="0">
-                    <div class="vorteil-number">01</div>
-                    <div class="vorteil-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="comparison-grid">
+                <div class="comparison-card primary reveal" data-delay="0">
+                    <div class="comparison-badge">Unser Standard</div>
+                    <div class="comparison-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                            <polyline points="13 2 13 9 20 9" />
+                        </svg></div>
+                    <h3>Static Pages</h3>
+                    <p class="comparison-desc">Eine statische Website besteht aus fertigen HTML-Dateien, die direkt vom
+                        Server ausgeliefert werden – ohne Datenbank, ohne Backend, ohne komplizierte Technik. Das
+                        Ergebnis: <strong>blitzschnelle Ladezeiten, maximale Sicherheit und null laufende
+                            Kosten.</strong></p>
+                    <ul class="comparison-list">
+                        <li class="pro">Keine laufenden Kosten (ausser bei gewünschten Bearbeitungen)</li>
+                        <li class="pro">Extrem schnelle Ladezeiten</li>
+                        <li class="pro">Maximale Sicherheit (keine Datenbank = keine Angriffsfläche)</li>
+                        <li class="pro">Perfekt für SEO</li>
+                        <li class="pro">Keine Software-Updates nötig</li>
+                        <li class="pro">Kostenloses Hosting möglich</li>
+                        <li class="neutral">Änderungen werden von uns durchgeführt</li>
+                        <li class="neutral">Optimal für Firmenwebsites, Landingpages, Portfolios</li>
+                    </ul>
+                    <div class="comparison-cost">
+                        <span class="cost-label">Laufende Kosten</span>
+                        <span class="cost-value highlight">0 € *</span>
+                        <span class="cost-note">* Nur bei Domain-/Mail-Setup fallen geringe Kosten an
+                            (individuell)</span>
                     </div>
-                    <h3>Sorglos-Paket</h3>
-                    <p>Wir kümmern uns um alles – von Design über Texte bis zum Launch. Sie lehnen sich zurück und bekommen Ihre fertige Website.</p>
                 </div>
-                <div class="vorteil-card reveal" data-delay="100">
-                    <div class="vorteil-number">02</div>
-                    <div class="vorteil-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <div class="comparison-card reveal" data-delay="200">
+                    <div class="comparison-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <path d="M6 8h.01M9 8h.01" />
+                            <line x1="6" y1="11" x2="18" y2="11" />
+                        </svg></div>
+                    <h3>CMS (z.B. WordPress)</h3>
+                    <p class="comparison-desc">Ein Content-Management-System ermöglicht es Ihnen, Inhalte selbst zu
+                        bearbeiten – über ein Admin-Dashboard im Browser. Ideal, wenn Sie regelmässig Inhalte ändern
+                        möchten (z.B. Blog, News, Produkte).</p>
+                    <ul class="comparison-list">
+                        <li class="pro">Inhalte selbst bearbeiten (Texte, Bilder)</li>
+                        <li class="pro">Gut für Blogs, News, häufige Änderungen</li>
+                        <li class="pro">Viele Erweiterungen/Plugins verfügbar</li>
+                        <li class="con">Laufende Kosten nach dem 1. Jahr (individuell berechnet)</li>
+                        <li class="con">Regelmässige Updates nötig (Sicherheit)</li>
+                        <li class="con">Langsamere Ladezeiten</li>
+                        <li class="con">Grössere Angriffsfläche (Datenbank)</li>
+                        <li class="neutral">Höherer Einmalpreis</li>
+                    </ul>
+                    <div class="comparison-cost">
+                        <span class="cost-label">Laufende Kosten nach Jahr 1</span>
+                        <span class="cost-value">individuell</span>
+                        <span class="cost-note">Hosting, Updates, Wartung – je nach Umfang</span>
                     </div>
-                    <h3>Keine laufenden Kosten</h3>
-                    <p>Sie zahlen einmalig zum Festpreis. Keine monatlichen Gebühren, keine versteckten Kosten. Nur bei gewünschten Änderungen.</p>
-                </div>
-                <div class="vorteil-card reveal" data-delay="200">
-                    <div class="vorteil-number">03</div>
-                    <div class="vorteil-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3>Blitzschnell online</h3>
-                    <p>Innerhalb weniger Tage steht Ihre professionelle Website. Wir arbeiten effizient, ohne Kompromisse bei der Qualität.</p>
-                </div>
-                <div class="vorteil-card reveal" data-delay="300">
-                    <div class="vorteil-number">04</div>
-                    <div class="vorteil-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                    </div>
-                    <h3>Persönlicher Kontakt</h3>
-                    <p>Keine anonyme Agentur, sondern echte Menschen aus Graz. Direkte Kommunikation und schnelle Reaktionszeiten.</p>
-                </div>
-                <div class="vorteil-card reveal" data-delay="400">
-                    <div class="vorteil-number">05</div>
-                    <div class="vorteil-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                    </div>
-                    <h3>SEO inklusive</h3>
-                    <p>Jede Website wird von Anfang an für Suchmaschinen optimiert. Damit Sie nicht nur gut aussehen, sondern auch gefunden werden.</p>
-                </div>
-                <div class="vorteil-card reveal" data-delay="500">
-                    <div class="vorteil-number">06</div>
-                    <div class="vorteil-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    </div>
-                    <h3>100% Ihr Eigentum</h3>
-                    <p>Die fertige Website gehört komplett Ihnen. Kein Abo, kein Lock-in. Sie haben volle Kontrolle über Ihren Webauftritt.</p>
                 </div>
             </div>
+            <p class="comparison-footer reveal">Nicht sicher, welche Lösung die richtige ist? Wir beraten Sie gerne im
+                <a href="#kontakt">kostenlosen Erstgespräch</a>.
+            </p>
         </div>
     </section>
 
@@ -273,45 +428,45 @@
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-tag">So funktioniert's</span>
-                <h2 class="section-title">Unser <span class="text-gradient">Prozess</span></h2>
-                <p class="section-subtitle">In 4 einfachen Schritten zu Ihrer Traum-Website.</p>
+                <h2 class="section-title">In 4 Schritten zu Ihrer <span
+                        class="text-gradient-animated">Traum-Website</span></h2>
+                <p class="section-subtitle">Einfach, transparent und stressfrei.</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-line"></div>
-                <div class="timeline-item reveal" data-delay="0">
-                    <div class="timeline-dot">
-                        <span>1</span>
-                    </div>
-                    <div class="timeline-content">
+            <div class="process-grid">
+                <div class="process-step reveal" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
                         <h3>Erstgespräch</h3>
-                        <p>Wir lernen Sie und Ihr Unternehmen kennen. Was ist Ihr Ziel? Wer sind Ihre Kunden? In einem kostenlosen Erstgespräch klären wir alles.</p>
+                        <p>In einem kostenlosen Gespräch lernen wir Sie kennen. Was macht Ihr Unternehmen besonders? Wer
+                            sind Ihre Kunden?</p>
                     </div>
                 </div>
-                <div class="timeline-item reveal" data-delay="150">
-                    <div class="timeline-dot">
-                        <span>2</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Konzept & Design</h3>
-                        <p>Wir erstellen ein maßgeschneidertes Design-Konzept. Farben, Struktur, Texte — alles abgestimmt auf Ihre Marke und Zielgruppe.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal" data-delay="300">
-                    <div class="timeline-dot">
-                        <span>3</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Entwicklung</h3>
-                        <p>Wir setzen Ihre Website pixel-perfekt um. Responsiv, schnell, SEO-optimiert. Sie bekommen eine Vorschau und können Feedback geben.</p>
+                <div class="process-step reveal" data-delay="150">
+                    <div class="step-number">02</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
+                        <h3>Design & Konzept</h3>
+                        <p>Wir entwerfen ein maßgeschneidertes Design-Konzept. Sie sehen eine Vorschau und geben
+                            Feedback – bis es perfekt ist.</p>
                     </div>
                 </div>
-                <div class="timeline-item reveal" data-delay="450">
-                    <div class="timeline-dot">
-                        <span>4</span>
+                <div class="process-step reveal" data-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
+                        <h3>Umsetzung</h3>
+                        <p>Wir bauen Ihre Website: schnell, SEO-optimiert, DSGVO-konform. Mit allen Inhalten, Bildern
+                            und Texten.</p>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Launch 🚀</h3>
-                        <p>Nach Ihrer Freigabe geht die Website live. Wir kümmern uns um Domain, Hosting und alles Technische. Sie müssen sich um nichts kümmern.</p>
+                </div>
+                <div class="process-step reveal" data-delay="450">
+                    <div class="step-number">04</div>
+                    <div class="step-line"></div>
+                    <div class="step-content">
+                        <h3>Launch</h3>
+                        <p>Ihre Website geht live! Wir kümmern uns um Domain, Hosting und Setup. Sie müssen nichts tun –
+                            außer sich freuen.</p>
                     </div>
                 </div>
             </div>
@@ -322,112 +477,71 @@
     <section class="section portfolio" id="portfolio">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">Unsere Arbeit</span>
-                <h2 class="section-title">Ausgewählte <span class="text-gradient">Projekte</span></h2>
-                <p class="section-subtitle">Ein Blick auf unsere neuesten Arbeiten.</p>
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projekte, die <span class="text-gradient-animated">überzeugen</span></h2>
+                <p class="section-subtitle">Ein Auszug aus unseren neuesten Arbeiten.</p>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-card reveal" data-delay="0">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0a2a3c, #00e5ff33);">
-                        <div class="portfolio-mockup">
-                            <div class="mockup-bar">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mockup-content">
-                                <div class="mockup-header"></div>
-                                <div class="mockup-text"></div>
-                                <div class="mockup-text short"></div>
-                                <div class="mockup-grid-small">
-                                    <div></div><div></div><div></div>
-                                </div>
+                <div class="portfolio-card large reveal" data-delay="0">
+                    <div class="portfolio-visual" style="--accent: #f59e0b;">
+                        <div class="portfolio-mockup-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-content">
+                                <img src="testimonials/wattworks.png" alt="WattWorks GmbH Website"
+                                    class="portfolio-screenshot">
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-tag">Webdesign</span>
-                        <h3>Handwerksbetrieb Steiermark</h3>
-                        <p>Moderne Website für einen lokalen Handwerksbetrieb. Inkl. Galerie, Kontaktformular und Google Maps Integration.</p>
+                    <div class="portfolio-details">
+                        <div class="portfolio-tags">
+                            <span>Webdesign</span><span>SEO</span>
+                        </div>
+                        <h3>WattWorks GmbH</h3>
+                        <p>Kompletter Webauftritt für PV-Montage & Befundung – inkl. SEO für österreichweite
+                            Sichtbarkeit</p>
+                        <div class="portfolio-result">
+                            <div><a href="https://wattworks.at" target="_blank"
+                                    rel="noopener"><strong>wattworks.at</strong></a></div>
+                            <div><strong>PV-Branche</strong></div>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-card reveal" data-delay="150">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #1a0a3c, #a855f733);">
-                        <div class="portfolio-mockup">
-                            <div class="mockup-bar">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mockup-content">
-                                <div class="mockup-header purple"></div>
-                                <div class="mockup-text"></div>
-                                <div class="mockup-cards">
-                                    <div></div><div></div>
-                                </div>
+                    <div class="portfolio-visual" style="--accent: #a855f7;">
+                        <div class="portfolio-mockup-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-content">
+                                <img src="testimonials/kindermarkenschuhe.png" alt="Vega Nova Graz Website"
+                                    class="portfolio-screenshot">
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-tag">Webdesign + SEO</span>
-                        <h3>Arztpraxis Graz</h3>
-                        <p>Professioneller Webauftritt mit Online-Terminbuchung und #1 Ranking für lokale Suchanfragen.</p>
+                    <div class="portfolio-details">
+                        <div class="portfolio-tags"><span>Webdesign</span><span>SEO</span></div>
+                        <h3>Vega Nova Graz</h3>
+                        <p>Webauftritt für Kinderschuhe & Designmöbel – Markenpräsenz in Graz</p>
+                        <div class="portfolio-result">
+                            <div><a href="https://kindermarkenschuhe.at" target="_blank"
+                                    rel="noopener"><strong>kindermarkenschuhe.at</strong></a></div>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-card reveal" data-delay="300">
-                    <div class="portfolio-image" style="background: linear-gradient(135deg, #0a3c1a, #22c55e33);">
-                        <div class="portfolio-mockup">
-                            <div class="mockup-bar">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mockup-content">
-                                <div class="mockup-header green"></div>
-                                <div class="mockup-text"></div>
-                                <div class="mockup-text short"></div>
-                                <div class="mockup-text"></div>
-                                <div class="mockup-btn green"></div>
+                    <div class="portfolio-visual" style="--accent: #22c55e;">
+                        <div class="portfolio-mockup-browser">
+                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div class="browser-content">
+                                <img src="testimonials/et-sl.png" alt="ET-SL GmbH Website" class="portfolio-screenshot">
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-tag">SEO</span>
-                        <h3>E-Commerce Startup</h3>
-                        <p>SEO-Strategie für ein Startup: +340% organischer Traffic in 6 Monaten durch Content & technisches SEO.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== ÜBER UNS ==================== -->
-    <section class="section ueber-uns" id="ueber-uns">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-visual reveal">
-                    <div class="about-card-stack">
-                        <div class="about-float-card card-1">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <span>Graz, Steiermark</span>
-                        </div>
-                        <div class="about-float-card card-2">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                            <span>Kreatives Team</span>
-                        </div>
-                        <div class="about-main-visual">
-                            <div class="visual-wave"></div>
-                            <div class="visual-logo">M</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text reveal" data-delay="200">
-                    <span class="section-tag">Über uns</span>
-                    <h2 class="section-title">Digital an der <span class="text-gradient">Mur</span></h2>
-                    <p>Murix – unser Name verbindet <strong>Mur</strong> und <strong>Matrix</strong>. Wir sind eine junge, digitale Agentur aus Graz, direkt an der Mur. Hier, wo Innovation auf Tradition trifft, schaffen wir Websites, die nicht nur gut aussehen, sondern auch Ergebnisse liefern.</p>
-                    <p>Wir glauben daran, dass jedes Unternehmen einen professionellen Webauftritt verdient – ohne Kopfschmerzen und ohne laufende Kosten. Deshalb bieten wir Websites zum Festpreis: fertig, schön und performant.</p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <span class="highlight-value" data-target="5">0</span><span class="highlight-suffix">+</span>
-                            <span class="highlight-label">Jahre Erfahrung</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-value" data-target="50">0</span><span class="highlight-suffix">+</span>
-                            <span class="highlight-label">Zufriedene Kunden</span>
+                    <div class="portfolio-details">
+                        <div class="portfolio-tags"><span>Webdesign</span><span>SEO</span></div>
+                        <h3>ET-SL GmbH</h3>
+                        <p>Website für Elektrotechnik Schöcklland – Elektriker in St. Radegund bei Graz</p>
+                        <div class="portfolio-result">
+                            <div><a href="https://et-sl.at" target="_blank" rel="noopener"><strong>et-sl.at</strong></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -436,43 +550,351 @@
     </section>
 
     <!-- ==================== TESTIMONIALS ==================== -->
-    <section class="section testimonials">
+    <section class="section testimonials" id="testimonials">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-tag">Kundenstimmen</span>
-                <h2 class="section-title">Was unsere <span class="text-gradient">Kunden</span> sagen</h2>
+                <h2 class="section-title">Das sagen unsere <span class="text-gradient-animated">Kunden</span></h2>
             </div>
             <div class="testimonial-grid">
                 <div class="testimonial-card reveal" data-delay="0">
+                    <div class="testimonial-quote">"</div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Murix hat unsere Erwartungen übertroffen. Die Website sieht fantastisch aus und wir werden endlich bei Google gefunden. Absolut empfehlenswert!"</p>
+                    <p>"Florian hat unsere Website für WattWorks professionell und schnell umgesetzt. SEO war von Anfang
+                        an mitgedacht – wir werden jetzt österreichweit gefunden. Klare Empfehlung!"</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">MH</div>
+                        <img src="testimonials/wattworks_small.png" alt="WattWorks Logo" class="author-avatar-img">
                         <div>
-                            <strong>Markus H.</strong>
-                            <span>Geschäftsführer, Installationstechnik</span>
+                            <strong>WattWorks GmbH</strong>
+                            <span>PV-Montage & Befundung</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal" data-delay="150">
+                    <div class="testimonial-quote">"</div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Endlich eine Agentur, die liefert was sie verspricht. Keine laufenden Kosten, eine wunderschöne Website und persönlicher Kontakt. Danke, Murix!"</p>
+                    <p>"Unser neuer Webauftritt für Vega Nova sieht genau so aus, wie wir uns das vorgestellt haben.
+                        Unkomplizierte Zusammenarbeit und ein super Ergebnis. Danke, Murix!"</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">SK</div>
+                        <div class="author-avatar" style="--bg: #a855f7">VN</div>
                         <div>
-                            <strong>Sandra K.</strong>
-                            <span>Inhaberin, Kosmetikstudio</span>
+                            <strong>Vega Nova</strong>
+                            <span>Kinderschuhe & Designmöbel, Graz</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal" data-delay="300">
+                    <div class="testimonial-quote">"</div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Das Sorglos-Paket war genau das Richtige für mich. Ich musste mich um nichts kümmern und hatte innerhalb einer Woche meine fertige Website."</p>
+                    <p>"Als Elektrotechnik-Betrieb brauchten wir eine Website, die unsere Leistungen klar darstellt.
+                        Murix hat das perfekt umgesetzt – modern, schnell und mit persönlicher Betreuung."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">TW</div>
+                        <img src="testimonials/et-sl_small.png" alt="ET-SL Logo" class="author-avatar-img">
                         <div>
-                            <strong>Thomas W.</strong>
-                            <span>Freiberuflicher Fotograf</span>
+                            <strong>ET-SL GmbH</strong>
+                            <span>Elektrotechnik, St. Radegund</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PREISE ==================== -->
+    <section class="section preise" id="preise">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Transparente Preise</span>
+                <h2 class="section-title">Faire Preise. <span class="text-gradient-animated">Transparent
+                        kalkuliert.</span></h2>
+                <p class="section-subtitle">Einmaliger Festpreis, abhängig vom Umfang Ihres Projekts.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal" data-delay="0">
+                    <div class="pricing-header">
+                        <h3>OnePager</h3>
+                        <p>Ideal für den kompakten Auftritt</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-from">ab</span>
+                        <span class="price-amount">€ 690</span>
+                        <span class="price-note">einmalig</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">Individuelles Design</li>
+                        <li class="included">Responsive (Mobile-optimiert)</li>
+                        <li class="included">Eine Seite, alle Infos</li>
+                        <li class="included">Kontaktformular</li>
+                        <li class="included">SSL-Verschlüsselung</li>
+                        <li class="included">DSGVO-konform</li>
+                        <li class="excluded">SEO-Optimierung</li>
+                        <li class="excluded">Mehrere Unterseiten</li>
+                    </ul>
+                    <div class="pricing-note">Domain & Hosting ab ca. €5/Monat</div>
+                    <a href="#kontakt" class="btn btn-outline btn-full magnetic">Anfragen</a>
+                </div>
+                <div class="pricing-card popular reveal" data-delay="150">
+                    <div class="popular-badge">★ Am beliebtesten</div>
+                    <div class="pricing-header">
+                        <h3>Komplett-Paket</h3>
+                        <p>Webdesign + SEO</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-from">ab</span>
+                        <span class="price-amount">€ 1.490</span>
+                        <span class="price-note">einmalig</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">Individuelles Design</li>
+                        <li class="included">SEO-Optimierung</li>
+                        <li class="included">Google Business Setup</li>
+                        <li class="included">Keyword-Strategie</li>
+                        <li class="included">Texterstellung inklusive</li>
+                        <li class="included">Responsive & schnell</li>
+                        <li class="included">Prioritäts-Support</li>
+                    </ul>
+                    <div class="pricing-note">Preis abhängig von Seitenanzahl & Umfang. Domain & Hosting ab ca.
+                        €5/Monat.</div>
+                    <a href="#kontakt" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min"
+                        data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a>
+                </div>
+                <div class="pricing-card reveal" data-delay="300">
+                    <div class="pricing-header">
+                        <h3>SEO only</h3>
+                        <p>Für bestehende Websites</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-from">ab</span>
+                        <span class="price-amount">€ 490</span>
+                        <span class="price-note">einmalig</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">SEO-Audit & Analyse</li>
+                        <li class="included">Keyword-Recherche</li>
+                        <li class="included">OnPage-Optimierung</li>
+                        <li class="included">Technisches SEO</li>
+                        <li class="included">Google Business Profil</li>
+                        <li class="included">Content-Empfehlungen</li>
+                        <li class="included">SEO-Report</li>
+                        <li class="excluded">Webdesign</li>
+                    </ul>
+                    <div class="pricing-note">Umfang abhängig von bestehender Website</div>
+                    <a href="#kontakt" class="btn btn-outline btn-full magnetic">Anfragen</a>
+                </div>
+            </div>
+            <!-- ==================== MURIX CARE (RECURRING REVENUE) ==================== -->
+            <div class="care-section reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Murix Care: <span class="text-gradient-animated">Sorglos-Wartung</span>
+                    </h2>
+                    <p class="section-subtitle">Wählen Sie das passende Service-Level für Ihr Unternehmen. Optional
+                        buchbar, jederzeit kündbar.</p>
+                </div>
+                <div class="care-grid">
+                    <div class="care-card">
+                        <div class="care-header">
+                            <h4>Basis Care</h4>
+                            <div class="care-price">€ 29 <span>/ Monat</span></div>
+                            <p>Der technische Grundschutz für Ihre Website.</p>
+                        </div>
+                        <ul class="care-features">
+                            <li>Managed Hosting</li>
+                            <li>Tägliche Backups</li>
+                            <li>SSL-Verschlüsselung</li>
+                            <li>24/7 Uptime-Monitoring</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn-outline btn-full">Jetzt buchen</a>
+                    </div>
+                    <div class="care-card featured-care"
+                        style="border-color: var(--accent); transform: scale(1.05); box-shadow: var(--shadow-glow);">
+                        <div class="care-header">
+                            <h4>Premium Care</h4>
+                            <div class="care-price">€ 59 <span>/ Monat</span></div>
+                            <p>Die Rundum-Lösung für wachsende Unternehmen.</p>
+                        </div>
+                        <ul class="care-features">
+                            <li>Alles aus Basis Care</li>
+                            <li>30 Min. Support inkludiert</li>
+                            <li>SEO-Reporting monatlich</li>
+                            <li>Technischer Gesundheitscheck</li>
+                        </ul>
+                        <a href="#kontakt" class="btn btn-primary btn-full">Meistgewählt</a>
+                    </div>
+                    <div class="care-card">
+                        <div class="care-header">
+                            <h4>Business IT</h4>
+                            <div class="care-price">€ 149 <span>/ Monat</span></div>
+                            <p>Ihre externe IT-Abteilung inkl. M365 Management.</p>
+                        </div>
+                        <ul class="care-features">
+                            <li>Alles aus Premium Care</li>
+                            <li>Microsoft 365 Management</li>
+                            <li>Bevorzugte Ticket-Bearbeitung</li>
+                        </ul>
+                        <div class="care-note" style="font-size: 0.8rem; opacity: 0.7; margin: 10px 0;">* M365 Lizenzen werden separat nach Bedarf abgerechnet.</div>
+                        <a href="#kontakt" class="btn btn-outline btn-full">Anfragen</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-addon reveal" style="margin-top: 60px;">
+                <h4>Weitere Optionen</h4>
+                <div class="addon-grid">
+                    <div class="addon-item">
+                        <span class="addon-name">Domain & E-Mail Setup</span>
+                        <span class="addon-price">ab € 89</span>
+                        <span class="addon-desc">Einmalige Einrichtung Ihrer Wunschdomain und E-Mail Konten</span>
+                    </div>
+                    <div class="addon-item">
+                        <span class="addon-name">CMS-Aufpreis</span>
+                        <span class="addon-price">ab €400</span>
+                        <span class="addon-desc">WordPress o.ä. inkl. Einschulung.</span>
+                    </div>
+                    <div class="addon-item">
+                        <span class="addon-name">Content-Erstellung</span>
+                        <span class="addon-price">auf Anfrage</span>
+                        <span class="addon-desc">Professionelle Texte und Bilder für Ihre neuen Unterseiten</span>
+                    </div>
+                </div>
+            </div>
+            <p class="pricing-disclaimer reveal">Alle Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gemäß § 6 Abs. 1 Z 27 UStG wird keine Umsatzsteuer erhoben. Gerne erstellen wir Ihnen ein
+                individuelles Angebot, das exakt zu Ihren monatlichen oder einmaligen Anforderungen passt. Die Murix
+                Care Verträge sind monatlich kündbar.</p>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="faq-layout">
+                <div class="faq-header reveal">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Häufig gestellte <span class="text-gradient-animated">Fragen</span></h2>
+                    <p>Die wichtigsten Antworten auf einen Blick.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item reveal" data-delay="0">
+                        <button class="faq-question">
+                            <span>Was kostet eine Website bei Murix?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Unsere Websites starten ab € 990 als Einmalzahlung. Im kostenlosen Erstgespräch
+                                besprechen wir Ihre Anforderungen und erstellen ein individuelles Angebot – transparent
+                                und ohne versteckte Kosten.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="100">
+                        <button class="faq-question">
+                            <span>Gibt es wirklich keine laufenden Kosten?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Bei unseren <strong>Static Pages</strong> gilt: Es gibt keinen Abo-Zwang. Sobald die
+                                Seite bezahlt ist, gehört sie Ihnen und bleibt online.
+                                Für Unternehmen, die sich jedoch nicht selbst um Hosting, Backups oder
+                                Sicherheitsupdates kümmern möchten, bieten wir unsere **Murix Care Pakete** an.
+                                Das ist ein optionaler Service für maximale Sorgenfreiheit, aber kein technischer Zwang.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="200">
+                        <button class="faq-question">
+                            <span>Wie lange dauert es, bis meine Website fertig ist?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>In der Regel ist Ihre Website innerhalb von 5-10 Werktagen fertig. Bei größeren Projekten
+                                kann es etwas länger dauern. Sie erhalten vorab eine Vorschau und können Feedback geben.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="300">
+                        <button class="faq-question">
+                            <span>Brauche ich technische Vorkenntnisse?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nein, gar nicht! Wir übernehmen alles: Design, Entwicklung, Texte, SEO, Domain und
+                                Hosting. Sie müssen sich um nichts kümmern – das ist unser Sorglos-Paket.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="400">
+                        <button class="faq-question">
+                            <span>Kann ich die Website später selbst bearbeiten?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Das kommt auf Ihre Lösung an: Bei <strong>Static Pages</strong> übernehmen wir Änderungen
+                                für Sie – schnell und unkompliziert. Auf Wunsch richten wir ein <strong>CMS
+                                    (Content-Management-System)</strong> wie WordPress ein, mit dem Sie Texte und Bilder
+                                selbst ändern können. Beachten Sie, dass bei CMS-Lösungen nach dem ersten Jahr laufende
+                                Kosten für Hosting und Wartung anfallen.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="500">
+                        <button class="faq-question">
+                            <span>Was passiert nach dem Launch?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nach dem Launch gehört die Website Ihnen. Optional bieten wir laufende Betreuung an
+                                (Updates, Änderungen, SEO-Monitoring). Das ist aber komplett freiwillig – kein Zwang,
+                                kein Abo.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="600">
+                        <button class="faq-question">
+                            <span>Was bietet Murix im Bereich IT-Dienstleistungen?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Neben Webdesign und SEO unterstützen wir KMU bei der Einrichtung und Verwaltung von
+                                <strong>Microsoft 365</strong>. Das umfasst E-Mail (Outlook), Teams, OneDrive und
+                                die gesamte Cloud-Infrastruktur – damit Sie ohne eigene Server modern und sicher
+                                arbeiten können. Von der Migration bis zum laufenden Support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="700">
+                        <button class="faq-question">
+                            <span>Können wir unsere bestehenden E-Mails zu Microsoft 365 mitnehmen?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ja, absolut! Wir übernehmen die komplette <strong>Migration</strong> Ihrer bestehenden
+                                Postfächer, Kontakte und Kalender zu Microsoft 365. Egal ob Sie von einem lokalen
+                                Exchange-Server, einem Webhosting-Anbieter oder einem anderen E-Mail-Dienst kommen –
+                                Ihre Daten werden sicher und vollständig übertragen. In der Regel merken Ihre
+                                Mitarbeiter vom Umzug kaum etwas.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="800">
+                        <button class="faq-question">
+                            <span>Brauchen wir noch einen eigenen Server im Büro?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nein! Das ist genau unser Ansatz: Mit <strong>Microsoft 365</strong> laufen E-Mails
+                                über Exchange Online, Dateien liegen sicher in OneDrive und SharePoint, und die
+                                Zusammenarbeit funktioniert über Teams. Ein teurer Server im Büro, der gewartet und
+                                gesichert werden muss, ist nicht mehr nötig. Das spart Ihnen Anschaffungskosten,
+                                Stromkosten und IT-Wartungsaufwand.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal" data-delay="900">
+                        <button class="faq-question">
+                            <span>Gibt es bei Murix Knebelverträge oder lange Bindungsfristen?</span>
+                            <div class="faq-toggle"><span></span><span></span></div>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nein, bei uns gibt es <strong>keine Knebelverträge</strong>. Websites werden als
+                                einmalige Festpreisprojekte abgerechnet – danach gehört die Website Ihnen. Die
+                                Microsoft 365 Betreuung ist <strong>monatlich kündbar</strong>, ohne Mindestlaufzeit.
+                                Und auch unsere optionale Website-Betreuung (Updates, Änderungen) ist jederzeit
+                                kündbar. Wir wollen, dass Sie bleiben, weil Sie zufrieden sind – nicht weil ein
+                                Vertrag Sie bindet.</p>
                         </div>
                     </div>
                 </div>
@@ -484,12 +906,21 @@
     <section class="section cta-section">
         <div class="container">
             <div class="cta-box reveal">
-                <div class="cta-bg-effect"></div>
-                <h2>Bereit für Ihre neue Website?</h2>
-                <p>Lassen Sie uns gemeinsam Ihren perfekten Webauftritt gestalten. Kostenloses Erstgespräch – unverbindlich.</p>
-                <a href="#kontakt" class="btn btn-primary btn-lg">
-                    <span>Jetzt Kontakt aufnehmen</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <div class="cta-orbs">
+                    <div class="cta-orb"></div>
+                    <div class="cta-orb"></div>
+                </div>
+                <span class="section-tag">Bereit loszulegen?</span>
+                <h2>Ihre neue Website ist nur<br>ein Gespräch entfernt.</h2>
+                <p>Kostenloses Erstgespräch – unverbindlich und ohne Druck. Lassen Sie uns gemeinsam herausfinden, wie
+                    wir Ihnen helfen können.</p>
+                <a href="#kontakt" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min"
+                    data-cal-namespace="30min"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                    <span>Kostenloses Erstgespräch buchen</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -498,68 +929,99 @@
     <!-- ==================== KONTAKT ==================== -->
     <section class="section kontakt" id="kontakt">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Kontakt</span>
-                <h2 class="section-title">Lassen Sie uns <span class="text-gradient">sprechen</span></h2>
-                <p class="section-subtitle">Schreiben Sie uns – wir melden uns innerhalb von 24 Stunden.</p>
-            </div>
-            <div class="kontakt-grid">
-                <div class="kontakt-info reveal">
-                    <div class="kontakt-info-card">
-                        <div class="kontakt-info-item">
+            <div class="kontakt-layout">
+                <div class="kontakt-text reveal">
+                    <span class="section-tag">Kontakt</span>
+                    <h2 class="section-title">Lassen Sie uns <span class="text-gradient-animated">sprechen</span></h2>
+                    <p>Schreiben Sie uns eine Nachricht oder rufen Sie direkt an. Wir melden uns innerhalb von 24
+                        Stunden zurück.</p>
+                    <div class="kontakt-details">
+                        <div class="kontakt-item">
                             <div class="kontakt-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
                             </div>
                             <div>
-                                <strong>E-Mail</strong>
+                                <span class="kontakt-label">E-Mail</span>
                                 <a href="mailto:hello@murix.at">hello@murix.at</a>
                             </div>
                         </div>
-                        <div class="kontakt-info-item">
+                        <div class="kontakt-item">
                             <div class="kontakt-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
                             </div>
                             <div>
-                                <strong>Standort</strong>
-                                <span>Graz, Steiermark</span>
+                                <span class="kontakt-label">Standort</span>
+                                <span>Waltendorfer Hauptstraße 84B<br>8010 Graz, Steiermark</span>
                             </div>
                         </div>
-                        <div class="kontakt-info-item">
+                        <div class="kontakt-item">
                             <div class="kontakt-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
                             </div>
                             <div>
-                                <strong>Antwortzeit</strong>
-                                <span>Innerhalb von 24 Stunden</span>
+                                <span class="kontakt-label">Antwortzeit</span>
+                                <span>Innerhalb von 24h</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <form class="kontakt-form reveal" data-delay="200" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input type="email" id="email" name="email" placeholder="ihre@email.at" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" placeholder="max@email.at" required>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="service">Interesse an</label>
                         <select id="service" name="service">
-                            <option value="">Bitte wählen</option>
+                            <option value="">Bitte wählen...</option>
                             <option value="webdesign">Webdesign</option>
                             <option value="seo">SEO</option>
-                            <option value="beides">Webdesign + SEO</option>
+                            <option value="komplett">Komplett-Paket (Webdesign + SEO)</option>
+                            <option value="microsoft365">Microsoft 365 / IT-Dienstleistungen</option>
+                            <option value="website-it">Website + IT Komplett</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Nachricht</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Erzählen Sie uns von Ihrem Projekt..."></textarea>
+                        <label for="budget">Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Bitte wählen...</option>
+                            <option value="unter-1000">Unter € 1.000</option>
+                            <option value="1000-2000">€ 1.000 – € 2.000</option>
+                            <option value="ueber-2000">Über € 2.000</option>
+                            <option value="unsicher">Noch unsicher</option>
+                        </select>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
+                    <div class="form-group">
+                        <label for="message">Ihre Nachricht</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Erzählen Sie uns von Ihrem Projekt..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full magnetic">
                         <span>Nachricht senden</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -571,35 +1033,53 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#hero" class="nav-logo">
-                        <span class="logo-icon">M</span>
-                        <span class="logo-text">MURIX</span>
+                    <a href="#hero" class="footer-logo-link">
+                        <img src="favicon.svg" alt="Murix" class="footer-logo-icon">
+                        <span class="footer-logo-text">MURIX</span>
                     </a>
-                    <p>Webdesign & SEO aus Graz.<br>Ihre Website zum Festpreis.</p>
+                    <p>Webdesign, SEO & IT-Dienstleistungen aus Graz.<br>Websites zum Festpreis. Microsoft 365 für KMU.
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <h4>Navigation</h4>
+                <div class="footer-col">
+                    <h4>Leistungen</h4>
                     <ul>
-                        <li><a href="#leistungen">Leistungen</a></li>
-                        <li><a href="#vorteile">Vorteile</a></li>
-                        <li><a href="#prozess">Prozess</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="webdesign-graz.html">Webdesign Graz</a></li>
+                        <li><a href="seo-graz.html">SEO Graz</a></li>
+                        <li><a href="webdesign-steiermark.html">Webdesign Steiermark</a></li>
+                        <li><a href="microsoft-365.html">Microsoft 365 für KMU</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <div class="footer-col">
                     <h4>Kontakt</h4>
                     <ul>
                         <li><a href="mailto:hello@murix.at">hello@murix.at</a></li>
-                        <li><span>Graz, Steiermark</span></li>
+                        <li><span>Waltendorfer Hauptstraße 84B</span></li>
+                        <li><span>8010 Graz, Steiermark</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Murix. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Murix. Mit ☕ in Graz gemacht.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Cal.com element-click embed code begins -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
+        Cal("init", "30min", { origin: "https://app.cal.eu" });
+        Cal.ns["30min"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+    </script>
+    <!-- Cal.com element-click embed code ends -->
+
     <script src="script.js"></script>
 </body>
+
 </html>
