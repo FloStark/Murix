@@ -322,7 +322,7 @@ function initTypewriter() {
     const el = document.getElementById('typewriter');
     if (!el) return;
 
-    const phrases = ['Websites', 'IT-Systeme', 'SEO-Strategien'];
+    const phrases = [' Websites', ' IT-Systeme', ' SEO-Strategien'];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
