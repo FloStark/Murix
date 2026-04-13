@@ -23,7 +23,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
@@ -48,6 +48,9 @@
 </head>
 
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
     <!-- Custom Cursor -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -60,7 +63,7 @@
             </a>
             <ul class="nav-links" id="navLinks">
                 <li class="nav-dropdown">
-                    <a href="#leistungen" class="nav-link">Leistungen <svg class="dropdown-arrow" width="10" height="10"
+                    <a href="#leistungen" class="nav-link">Leistungen <svg aria-hidden="true" class="dropdown-arrow" width="10" height="10"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                             <polyline points="6 9 12 15 18 9" />
                         </svg></a>
@@ -100,7 +103,7 @@
                         data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a>
                 </li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -108,8 +111,10 @@
         </div>
     </nav>
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero" id="hero">
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content">
+        <!-- ==================== HERO ==================== -->
+        <section class="hero" id="hero">
         <div class="hero-bg">
             <div class="hero-gradient-orb orb-1"></div>
             <div class="hero-gradient-orb orb-2"></div>
@@ -131,7 +136,7 @@
                     data-cal-namespace="30min"
                     data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                     <span>Kostenloses Erstgespräch</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
@@ -191,7 +196,7 @@
                 </div>
                 <div class="hook-cards reveal" data-delay="200">
                     <div class="pain-card">
-                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        <div class="pain-icon"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5">
                                 <line x1="12" y1="1" x2="12" y2="23" />
                                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
@@ -200,7 +205,7 @@
                         <p>Volle Kostentransparenz von Anfang an. Faire Einmalpreise sorgen für Planungssicherheit – ohne versteckte Gebühren oder verpflichtende Abos.</p>
                     </div>
                     <div class="pain-card">
-                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        <div class="pain-icon"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5">
                                 <circle cx="11" cy="11" r="8" />
                                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -209,7 +214,7 @@
                         <p>Wir bauen blitzschnelle Websites mit modernstem SEO. So werden Sie von Ihren Kunden gefunden und hinterlassen digital einen bleibenden Eindruck.</p>
                     </div>
                     <div class="pain-card">
-                        <div class="pain-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        <div class="pain-icon"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5">
                                 <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
                             </svg></div>
@@ -242,7 +247,7 @@
                 <div class="service-card reveal" data-delay="0">
                     <div class="service-number">01</div>
                     <div class="service-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <rect x="2" y="3" width="20" height="14" rx="2" />
                             <line x1="8" y1="21" x2="16" y2="21" />
@@ -263,7 +268,7 @@
                 <div class="service-card reveal" data-delay="150">
                     <div class="service-number">02</div>
                     <div class="service-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <circle cx="11" cy="11" r="8" />
                             <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -286,7 +291,7 @@
                     <div class="featured-badge">Beliebtestes Paket</div>
                     <div class="service-number">03</div>
                     <div class="service-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                         </svg>
@@ -304,7 +309,7 @@
                 <div class="service-card reveal" data-delay="450">
                     <div class="service-number">04</div>
                     <div class="service-icon-wrap">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
                         </svg>
@@ -345,81 +350,6 @@
                     <span class="stat-label">Tage bis zur Website</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ==================== STATIC vs CMS ==================== -->
-    <section class="section static-vs-cms" id="technologie">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Unser Ansatz</span>
-                <h2 class="section-title">Static Pages: <span class="text-gradient-animated">Unser Kerngeschäft</span>
-                </h2>
-                <p class="section-subtitle">Schneller, sicherer, günstiger – und ohne laufende Kosten.</p>
-            </div>
-            <div class="comparison-grid">
-                <div class="comparison-card primary reveal" data-delay="0">
-                    <div class="comparison-badge">Unser Standard</div>
-                    <div class="comparison-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5">
-                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-                            <polyline points="13 2 13 9 20 9" />
-                        </svg></div>
-                    <h3>Static Pages</h3>
-                    <p class="comparison-desc">Eine statische Website besteht aus fertigen HTML-Dateien, die direkt vom
-                        Server ausgeliefert werden – ohne Datenbank, ohne Backend, ohne komplizierte Technik. Das
-                        Ergebnis: <strong>blitzschnelle Ladezeiten, maximale Sicherheit und null laufende
-                            Kosten.</strong></p>
-                    <ul class="comparison-list">
-                        <li class="pro">Keine laufenden Kosten (ausser bei gewünschten Bearbeitungen)</li>
-                        <li class="pro">Extrem schnelle Ladezeiten</li>
-                        <li class="pro">Maximale Sicherheit (keine Datenbank = keine Angriffsfläche)</li>
-                        <li class="pro">Perfekt für SEO</li>
-                        <li class="pro">Keine Software-Updates nötig</li>
-                        <li class="pro">Kostenloses Hosting möglich</li>
-                        <li class="neutral">Änderungen werden von uns durchgeführt</li>
-                        <li class="neutral">Optimal für Firmenwebsites, Landingpages, Portfolios</li>
-                    </ul>
-                    <div class="comparison-cost">
-                        <span class="cost-label">Laufende Kosten</span>
-                        <span class="cost-value highlight">0 € *</span>
-                        <span class="cost-note">* Nur bei Domain-/Mail-Setup fallen geringe Kosten an
-                            (individuell)</span>
-                    </div>
-                </div>
-                <div class="comparison-card reveal" data-delay="200">
-                    <div class="comparison-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
-                            <path d="M6 8h.01M9 8h.01" />
-                            <line x1="6" y1="11" x2="18" y2="11" />
-                        </svg></div>
-                    <h3>CMS (z.B. WordPress)</h3>
-                    <p class="comparison-desc">Ein Content-Management-System ermöglicht es Ihnen, Inhalte selbst zu
-                        bearbeiten – über ein Admin-Dashboard im Browser. Ideal, wenn Sie regelmässig Inhalte ändern
-                        möchten (z.B. Blog, News, Produkte).</p>
-                    <ul class="comparison-list">
-                        <li class="pro">Inhalte selbst bearbeiten (Texte, Bilder)</li>
-                        <li class="pro">Gut für Blogs, News, häufige Änderungen</li>
-                        <li class="pro">Viele Erweiterungen/Plugins verfügbar</li>
-                        <li class="con">Laufende Kosten nach dem 1. Jahr (individuell berechnet)</li>
-                        <li class="con">Regelmässige Updates nötig (Sicherheit)</li>
-                        <li class="con">Langsamere Ladezeiten</li>
-                        <li class="con">Grössere Angriffsfläche (Datenbank)</li>
-                        <li class="neutral">Höherer Einmalpreis</li>
-                    </ul>
-                    <div class="comparison-cost">
-                        <span class="cost-label">Laufende Kosten nach Jahr 1</span>
-                        <span class="cost-value">individuell</span>
-                        <span class="cost-note">Hosting, Updates, Wartung – je nach Umfang</span>
-                    </div>
-                </div>
-            </div>
-            <p class="comparison-footer reveal">Nicht sicher, welche Lösung die richtige ist? Wir beraten Sie gerne im
-                <a href="#kontakt">kostenlosen Erstgespräch</a>.
-            </p>
         </div>
     </section>
 
@@ -683,84 +613,7 @@
                     <a href="#kontakt" class="btn btn-outline btn-full magnetic">Anfragen</a>
                 </div>
             </div>
-            <!-- ==================== MURIX CARE (RECURRING REVENUE) ==================== -->
-            <div class="care-section reveal">
-                <div class="section-header">
-                    <h2 class="section-title">Murix Care: <span class="text-gradient-animated">Sorglos-Wartung</span>
-                    </h2>
-                    <p class="section-subtitle">Wählen Sie das passende Service-Level für Ihr Unternehmen. Optional
-                        buchbar, jederzeit kündbar.</p>
-                </div>
-                <div class="care-grid">
-                    <div class="care-card">
-                        <div class="care-header">
-                            <h4>Basis Care</h4>
-                            <div class="care-price">€ 29 <span>/ Monat</span></div>
-                            <p>Der technische Grundschutz für Ihre Website.</p>
-                        </div>
-                        <ul class="care-features">
-                            <li>Managed Hosting</li>
-                            <li>Tägliche Backups</li>
-                            <li>SSL-Verschlüsselung</li>
-                            <li>24/7 Uptime-Monitoring</li>
-                        </ul>
-                        <a href="#kontakt" class="btn btn-outline btn-full">Jetzt buchen</a>
-                    </div>
-                    <div class="care-card featured-care"
-                        style="border-color: var(--accent); transform: scale(1.05); box-shadow: var(--shadow-glow);">
-                        <div class="care-header">
-                            <h4>Premium Care</h4>
-                            <div class="care-price">€ 59 <span>/ Monat</span></div>
-                            <p>Die Rundum-Lösung für wachsende Unternehmen.</p>
-                        </div>
-                        <ul class="care-features">
-                            <li>Alles aus Basis Care</li>
-                            <li>30 Min. Support inkludiert</li>
-                            <li>SEO-Reporting monatlich</li>
-                            <li>Technischer Gesundheitscheck</li>
-                        </ul>
-                        <a href="#kontakt" class="btn btn-primary btn-full">Meistgewählt</a>
-                    </div>
-                    <div class="care-card">
-                        <div class="care-header">
-                            <h4>Business IT</h4>
-                            <div class="care-price">€ 149 <span>/ Monat</span></div>
-                            <p>Ihre externe IT-Abteilung inkl. M365 Management.</p>
-                        </div>
-                        <ul class="care-features">
-                            <li>Alles aus Premium Care</li>
-                            <li>Microsoft 365 Management</li>
-                            <li>Bevorzugte Ticket-Bearbeitung</li>
-                        </ul>
-                        <div class="care-note" style="font-size: 0.8rem; opacity: 0.7; margin: 10px 0;">* M365 Lizenzen werden separat nach Bedarf abgerechnet.</div>
-                        <a href="#kontakt" class="btn btn-outline btn-full">Anfragen</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pricing-addon reveal" style="margin-top: 60px;">
-                <h4>Weitere Optionen</h4>
-                <div class="addon-grid">
-                    <div class="addon-item">
-                        <span class="addon-name">Domain & E-Mail Setup</span>
-                        <span class="addon-price">ab € 89</span>
-                        <span class="addon-desc">Einmalige Einrichtung Ihrer Wunschdomain und E-Mail Konten</span>
-                    </div>
-                    <div class="addon-item">
-                        <span class="addon-name">CMS-Aufpreis</span>
-                        <span class="addon-price">ab €400</span>
-                        <span class="addon-desc">WordPress o.ä. inkl. Einschulung.</span>
-                    </div>
-                    <div class="addon-item">
-                        <span class="addon-name">Content-Erstellung</span>
-                        <span class="addon-price">auf Anfrage</span>
-                        <span class="addon-desc">Professionelle Texte und Bilder für Ihre neuen Unterseiten</span>
-                    </div>
-                </div>
-            </div>
-            <p class="pricing-disclaimer reveal">Alle Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gemäß § 6 Abs. 1 Z 27 UStG wird keine Umsatzsteuer erhoben. Gerne erstellen wir Ihnen ein
-                individuelles Angebot, das exakt zu Ihren monatlichen oder einmaligen Anforderungen passt. Die Murix
-                Care Verträge sind monatlich kündbar.</p>
+            <p class="pricing-disclaimer reveal">Alle Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gemäß § 6 Abs. 1 Z 27 UStG wird keine Umsatzsteuer erhoben. Gerne erstellen wir Ihnen ein individuelles Angebot, das exakt zu Ihren Anforderungen passt.</p>
         </div>
     </section>
 
@@ -780,7 +633,7 @@
                             <div class="faq-toggle"><span></span><span></span></div>
                         </button>
                         <div class="faq-answer">
-                            <p>Unsere Websites starten ab € 990 als Einmalzahlung. Im kostenlosen Erstgespräch
+                            <p>Unsere Websites starten ab € 690 als Einmalzahlung für einen OnePager. Im kostenlosen Erstgespräch
                                 besprechen wir Ihre Anforderungen und erstellen ein individuelles Angebot – transparent
                                 und ohne versteckte Kosten.</p>
                         </div>
@@ -831,70 +684,6 @@
                                     (Content-Management-System)</strong> wie WordPress ein, mit dem Sie Texte und Bilder
                                 selbst ändern können. Beachten Sie, dass bei CMS-Lösungen nach dem ersten Jahr laufende
                                 Kosten für Hosting und Wartung anfallen.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item reveal" data-delay="500">
-                        <button class="faq-question">
-                            <span>Was passiert nach dem Launch?</span>
-                            <div class="faq-toggle"><span></span><span></span></div>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Nach dem Launch gehört die Website Ihnen. Optional bieten wir laufende Betreuung an
-                                (Updates, Änderungen, SEO-Monitoring). Das ist aber komplett freiwillig – kein Zwang,
-                                kein Abo.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item reveal" data-delay="600">
-                        <button class="faq-question">
-                            <span>Was bietet Murix im Bereich IT-Dienstleistungen?</span>
-                            <div class="faq-toggle"><span></span><span></span></div>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Neben Webdesign und SEO unterstützen wir KMU bei der Einrichtung und Verwaltung von
-                                <strong>Microsoft 365</strong>. Das umfasst E-Mail (Outlook), Teams, OneDrive und
-                                die gesamte Cloud-Infrastruktur – damit Sie ohne eigene Server modern und sicher
-                                arbeiten können. Von der Migration bis zum laufenden Support.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faq-item reveal" data-delay="700">
-                        <button class="faq-question">
-                            <span>Können wir unsere bestehenden E-Mails zu Microsoft 365 mitnehmen?</span>
-                            <div class="faq-toggle"><span></span><span></span></div>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Ja, absolut! Wir übernehmen die komplette <strong>Migration</strong> Ihrer bestehenden
-                                Postfächer, Kontakte und Kalender zu Microsoft 365. Egal ob Sie von einem lokalen
-                                Exchange-Server, einem Webhosting-Anbieter oder einem anderen E-Mail-Dienst kommen –
-                                Ihre Daten werden sicher und vollständig übertragen. In der Regel merken Ihre
-                                Mitarbeiter vom Umzug kaum etwas.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item reveal" data-delay="800">
-                        <button class="faq-question">
-                            <span>Brauchen wir noch einen eigenen Server im Büro?</span>
-                            <div class="faq-toggle"><span></span><span></span></div>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Nein! Das ist genau unser Ansatz: Mit <strong>Microsoft 365</strong> laufen E-Mails
-                                über Exchange Online, Dateien liegen sicher in OneDrive und SharePoint, und die
-                                Zusammenarbeit funktioniert über Teams. Ein teurer Server im Büro, der gewartet und
-                                gesichert werden muss, ist nicht mehr nötig. Das spart Ihnen Anschaffungskosten,
-                                Stromkosten und IT-Wartungsaufwand.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item reveal" data-delay="900">
-                        <button class="faq-question">
-                            <span>Gibt es bei Murix Knebelverträge oder lange Bindungsfristen?</span>
-                            <div class="faq-toggle"><span></span><span></span></div>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Nein, bei uns gibt es <strong>keine Knebelverträge</strong>. Websites werden als
-                                einmalige Festpreisprojekte abgerechnet – danach gehört die Website Ihnen. Die
-                                Microsoft 365 Betreuung ist <strong>monatlich kündbar</strong>, ohne Mindestlaufzeit.
-                                Und auch unsere optionale Website-Betreuung (Updates, Änderungen) ist jederzeit
-                                kündbar. Wir wollen, dass Sie bleiben, weil Sie zufrieden sind – nicht weil ein
-                                Vertrag Sie bindet.</p>
                         </div>
                     </div>
                 </div>
@@ -978,7 +767,10 @@
                         </div>
                     </div>
                 </div>
-                <form class="kontakt-form reveal" data-delay="200" id="contactForm">
+                <form action="https://formsubmit.co/hello@murix.at" method="POST" class="kontakt-form reveal" data-delay="200" id="contactForm">
+                    <input type="hidden" name="_subject" value="Neue Anfrage über Murix.at">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Name *</label>
@@ -1026,7 +818,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
@@ -1034,7 +826,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#hero" class="footer-logo-link">
-                        <img src="favicon.svg" alt="Murix" class="footer-logo-icon">
+                        <img src="favicon.ico" alt="Murix" class="footer-logo-icon">
                         <span class="footer-logo-text">MURIX</span>
                     </a>
                     <p>Webdesign, SEO & IT-Dienstleistungen aus Graz.<br>Websites zum Festpreis. Microsoft 365 für KMU.

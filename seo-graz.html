@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Service","name":"SEO Graz","provider":{"@type":"LocalBusiness","name":"Murix","address":{"@type":"PostalAddress","addressLocality":"Graz","addressRegion":"Steiermark","addressCountry":"AT"}},"description":"Suchmaschinenoptimierung aus Graz","areaServed":"Graz"}
@@ -24,6 +24,9 @@
 </head>
 
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
     <nav class="navbar" id="navbar">
@@ -31,7 +34,7 @@
             <a href="index.html" class="nav-logo"><img src="logo.svg" alt="Murix" class="logo-img"></a>
                         <ul class="nav-links" id="navLinks">
                 <li class="nav-dropdown">
-                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg aria-hidden="true" class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
                     <div class="dropdown-menu">
                         <div class="dropdown-section">
                             <span class="dropdown-label">Services</span>
@@ -70,7 +73,9 @@
         </div>
     </nav>
 
-    <section class="subpage-hero">
+    
+    <main id="main-content">
+<section class="subpage-hero">
         <div class="container">
             <div class="subpage-hero-content reveal">
                 <span class="section-tag">SEO Graz</span>
@@ -79,7 +84,7 @@
                     Suchmaschinenoptimierung aus Graz, die Ergebnisse liefert.</p>
                 <div class="hero-ctas">
                     <a href="javascript:void(0)" class="btn btn-primary magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Kostenloses SEO-Erstgespräch</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
@@ -102,7 +107,7 @@
                     <h3>Unsere SEO-Leistungen für Graz</h3>
                     <div class="feature-list">
                         <div class="feature-item reveal" data-delay="0">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <circle cx="11" cy="11" r="8" />
                                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -113,7 +118,7 @@
                             </div>
                         </div>
                         <div class="feature-item reveal" data-delay="100">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                                     <polyline points="14 2 14 8 20 8" />
@@ -125,7 +130,7 @@
                             </div>
                         </div>
                         <div class="feature-item reveal" data-delay="200">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                     <circle cx="12" cy="10" r="3" />
@@ -137,7 +142,7 @@
                             </div>
                         </div>
                         <div class="feature-item reveal" data-delay="300">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                                 </svg></div>
@@ -190,19 +195,21 @@
                 <p>Lassen Sie uns in einem kostenlosen Erstgespräch besprechen, wie wir Ihnen helfen können.</p>
                 <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                     <span>Kostenloses Erstgespräch buchen</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
             </div>
         </div>
     </section>
+    </main>
+
 
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="footer-logo-link"><img src="favicon.svg" alt="Murix"
+                    <a href="index.html" class="footer-logo-link"><img src="favicon.ico" alt="Murix"
                             class="footer-logo-icon"><span class="footer-logo-text">MURIX</span></a>
                     <p>Webdesign, SEO & IT-Dienstleistungen aus Graz.<br>Websites zum Festpreis. Microsoft 365 für KMU.</p>
                 </div>

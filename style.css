@@ -129,14 +129,12 @@ a {
     color: var(--accent);
     text-decoration: none;
     transition: color var(--transition-fast);
-    cursor: none;
+    outline: none;
 }
 
-button,
-input,
-select,
-textarea {
-    cursor: none;
+/* Allow visible focus for keyboard users even if cursor is hidden */
+*:focus-visible {
+    cursor: auto !important;
 }
 
 /* ============ Custom Cursor ============ */
@@ -254,6 +252,31 @@ textarea {
     50% {
         background-position: 100% center;
     }
+}
+
+/* ============ Accessibility ============ */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 24px;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 24px;
+    z-index: 999999;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    font-weight: 700;
+    transition: top 0.3s var(--ease);
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid var(--gray-900);
+}
+
+/* Consistent Focus Ring */
+:focus-visible {
+    outline: 2px solid var(--accent) !important;
+    outline-offset: 4px !important;
 }
 
 /* ============ Reveal Animations ============ */

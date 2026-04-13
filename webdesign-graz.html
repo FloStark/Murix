@@ -23,7 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
@@ -48,6 +48,9 @@
 </head>
 
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
@@ -58,7 +61,7 @@
             </a>
                         <ul class="nav-links" id="navLinks">
                 <li class="nav-dropdown">
-                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg aria-hidden="true" class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
                     <div class="dropdown-menu">
                         <div class="dropdown-section">
                             <span class="dropdown-label">Services</span>
@@ -92,13 +95,15 @@
                 <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
                 <li><a href="javascript:void(0)" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- HERO -->
+    
+    <main id="main-content">
+<!-- HERO -->
     <section class="subpage-hero">
         <div class="container">
             <div class="subpage-hero-content reveal">
@@ -110,7 +115,7 @@
                 <div class="hero-ctas">
                     <a href="javascript:void(0)" class="btn btn-primary magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                         <span>Kostenloses Erstgespräch</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
@@ -134,7 +139,7 @@
                     <h3>Was Sie von uns bekommen</h3>
                     <div class="feature-list">
                         <div class="feature-item reveal" data-delay="0">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <rect x="2" y="3" width="20" height="14" rx="2" />
                                     <line x1="8" y1="21" x2="16" y2="21" />
@@ -147,7 +152,7 @@
                             </div>
                         </div>
                         <div class="feature-item reveal" data-delay="100">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
                                     <line x1="12" y1="18" x2="12.01" y2="18" />
@@ -158,7 +163,7 @@
                             </div>
                         </div>
                         <div class="feature-item reveal" data-delay="200">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                                 </svg></div>
@@ -168,7 +173,7 @@
                             </div>
                         </div>
                         <div class="feature-item reveal" data-delay="300">
-                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <div class="feature-icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="1.5">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                                 </svg></div>
@@ -215,20 +220,22 @@
                 <p>Lassen Sie uns in einem kostenlosen Erstgespräch besprechen, wie wir Ihnen helfen können.</p>
                 <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                     <span>Kostenloses Erstgespräch buchen</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
             </div>
         </div>
     </section>
+    </main>
+
 
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="footer-logo-link">
-                        <img src="favicon.svg" alt="Murix" class="footer-logo-icon">
+                        <img src="favicon.ico" alt="Murix" class="footer-logo-icon">
                         <span class="footer-logo-text">MURIX</span>
                     </a>
                     <p>Webdesign, SEO & IT-Dienstleistungen aus Graz.<br>Websites zum Festpreis. Microsoft 365 für KMU.</p>

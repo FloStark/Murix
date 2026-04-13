@@ -132,9 +132,10 @@ function initHamburger() {
     if (!hamburger || !navLinks) return;
 
     hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
+        const isActive = hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        hamburger.setAttribute('aria-expanded', isActive);
+        document.body.style.overflow = isActive ? 'hidden' : '';
     });
 
     // Mobile dropdown toggle
@@ -275,21 +276,45 @@ function initContactForm() {
         const btn = form.querySelector('button[type="submit"]');
         const originalContent = btn.innerHTML;
 
-        btn.innerHTML = `
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Gesendet! ✨</span>
-        `;
+        btn.innerHTML = `<span>Sende...</span>`;
         btn.style.pointerEvents = 'none';
-        btn.style.background = '#22c55e';
 
-        setTimeout(() => {
-            btn.innerHTML = originalContent;
-            btn.style.pointerEvents = '';
-            btn.style.background = '';
-            form.reset();
-        }, 3000);
+        const formData = new FormData(form);
+
+        fetch("https://formsubmit.co/ajax/hello@murix.at", {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            btn.innerHTML = `
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Gesendet! ✨</span>
+            `;
+            btn.style.background = '#22c55e';
+
+            setTimeout(() => {
+                btn.innerHTML = originalContent;
+                btn.style.pointerEvents = '';
+                btn.style.background = '';
+                form.reset();
+            }, 3000);
+        })
+        .catch(error => {
+            btn.innerHTML = `<span>Ein Fehler ist aufgetreten!</span>`;
+            btn.style.background = '#ef4444';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalContent;
+                btn.style.pointerEvents = '';
+                btn.style.background = '';
+            }, 3000);
+        });
     });
 }
 

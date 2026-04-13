@@ -16,11 +16,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
     <nav class="navbar" id="navbar">
@@ -28,7 +31,7 @@
             <a href="index.html" class="nav-logo"><img src="logo.svg" alt="Murix" class="logo-img"></a>
                         <ul class="nav-links" id="navLinks">
                 <li class="nav-dropdown">
-                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <a href="index.html#leistungen" class="nav-link">Leistungen <svg aria-hidden="true" class="dropdown-arrow" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
                     <div class="dropdown-menu">
                         <div class="dropdown-section">
                             <span class="dropdown-label">Services</span>
@@ -67,7 +70,9 @@
         </div>
     </nav>
 
-    <section class="subpage-hero">
+    
+    <main id="main-content">
+<section class="subpage-hero">
         <div class="container">
             <div class="subpage-hero-content reveal">
                 <span class="section-tag">Ratgeber</span>
@@ -168,18 +173,20 @@
                 <span class="section-tag">Entscheidung leicht gemacht</span>
                 <h2>Wir beraten Sie. Kostenlos.</h2>
                 <p>Static oder CMS – im Erstgespräch finden wir die beste Lösung für Sie.</p>
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Erstgespräch buchen</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Erstgespräch buchen</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg></a>
             </div>
         </div>
     </section>
+    </main>
+
 
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand"><a href="index.html" class="footer-logo-link"><img src="favicon.svg"
+                <div class="footer-brand"><a href="index.html" class="footer-logo-link"><img src="favicon.ico"
                             alt="Murix" class="footer-logo-icon"><span class="footer-logo-text">MURIX</span></a>
                     <p>Webdesign, SEO & IT-Dienstleistungen aus Graz.<br>Websites zum Festpreis. Microsoft 365 für KMU.</p>
                 </div>
