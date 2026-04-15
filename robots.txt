@@ -1,9 +1,3 @@
 User-agent: *
 Allow: /
 Sitemap: https://murix.at/sitemap.xml
-
-User-agent: Googlebot
-Allow: /
-
-Disallow: /impressum
-Disallow: /datenschutz
