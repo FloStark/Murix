@@ -85,6 +85,12 @@
         <changefreq>yearly</changefreq>
     </url>
     <url>
+        <loc>https://murix.at/agb.html</loc>
+        <lastmod>2026-04-27</lastmod>
+        <priority>0.3</priority>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
         <loc>https://murix.at/datenschutz.html</loc>
         <lastmod>2026-04-27</lastmod>
         <priority>0.3</priority>

@@ -3,6 +3,22 @@
    Modern Beige + Cyan Accent Design
    ===================================================== */
 
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300 900;
+    font-display: swap;
+    src: url('fonts/inter-latin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 300 800;
+    font-display: swap;
+    src: url('fonts/space-grotesk-latin.woff2') format('woff2');
+}
+
 /* ============ Design Tokens ============ */
 :root {
     /* Brand Colors – Cyan */
@@ -147,7 +163,7 @@ a {
     background: var(--accent);
     border-radius: 50%;
     pointer-events: none;
-    z-index: 99999;
+    z-index: 1000001;
     transition: transform 0.15s var(--ease), background 0.3s;
     transform: translate(-50%, -50%);
 }
@@ -161,7 +177,7 @@ a {
     border: 2px solid var(--accent);
     border-radius: 50%;
     pointer-events: none;
-    z-index: 99998;
+    z-index: 1000000;
     transition: width 0.4s var(--ease), height 0.4s var(--ease), border-color 0.3s, background 0.3s;
     transform: translate(-50%, -50%);
     opacity: 0.5;
@@ -3084,6 +3100,84 @@ ol.styled-list li::before {
     content: "✓";
     color: var(--accent);
     font-weight: 800;
+}
+
+/* ============ Cookie Banner ============ */
+.cookie-banner {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    width: calc(100% - 48px);
+    max-width: 500px;
+    background: rgba(254, 252, 249, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    padding: 24px;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.8s var(--ease), opacity 0.8s var(--ease);
+    opacity: 0;
+}
+
+.cookie-banner.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.cookie-content {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.cookie-content strong {
+    color: var(--gray-900);
+}
+
+.cookie-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cookie-btn {
+    padding: 10px 24px;
+    font-size: 0.85rem;
+}
+
+.cookie-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.cookie-link:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .cookie-banner {
+        bottom: 20px;
+        padding: 20px;
+    }
+    
+    .cookie-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cookie-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .care-card .btn {

@@ -14,7 +14,59 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initMagneticButtons();
     initHeroAnimations();
+    initCookieBanner();
 });
+
+/* ============ COOKIE BANNER ============ */
+function initCookieBanner() {
+    if (localStorage.getItem('cookieConsent')) return;
+
+    const banner = document.createElement('div');
+    banner.className = 'cookie-banner';
+    banner.innerHTML = `
+        <div class="cookie-content">
+            <p>Wir verwenden nur <strong>technisch notwendige Cookies</strong> (z. B. für die Terminbuchung), um Ihnen die bestmögliche Erfahrung zu bieten. Keine Werbe- oder Tracking-Cookies.</p>
+        </div>
+        <div class="cookie-actions">
+            <button class="btn btn-primary cookie-btn magnetic" id="acceptCookies">Verstanden</button>
+            <a href="datenschutz.html" class="cookie-link">Datenschutzerklärung</a>
+        </div>
+    `;
+
+    document.body.appendChild(banner);
+
+    // Fade in
+    setTimeout(() => {
+        banner.classList.add('visible');
+    }, 2000);
+
+    document.getElementById('acceptCookies').addEventListener('click', () => {
+        banner.classList.remove('visible');
+        localStorage.setItem('cookieConsent', 'true');
+        setTimeout(() => banner.remove(), 800);
+    });
+
+    // Add hover effects for the new elements
+    const bannerInteractives = banner.querySelectorAll('button, a');
+    bannerInteractives.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            const dot = document.getElementById('cursorDot');
+            const ring = document.getElementById('cursorRing');
+            if (dot && ring) {
+                dot.classList.add('hover');
+                ring.classList.add('hover');
+            }
+        });
+        el.addEventListener('mouseleave', () => {
+            const dot = document.getElementById('cursorDot');
+            const ring = document.getElementById('cursorRing');
+            if (dot && ring) {
+                dot.classList.remove('hover');
+                ring.classList.remove('hover');
+            }
+        });
+    });
+}
 
 /* ============ CUSTOM CURSOR ============ */
 function initCustomCursor() {
@@ -288,33 +340,33 @@ function initContactForm() {
             },
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            btn.innerHTML = `
+            .then(response => response.json())
+            .then(data => {
+                btn.innerHTML = `
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="20 6 9 17 4 12"/>
                 </svg>
                 <span>Gesendet!</span>
             `;
-            btn.style.background = '#22c55e';
+                btn.style.background = '#22c55e';
 
-            setTimeout(() => {
-                btn.innerHTML = originalContent;
-                btn.style.pointerEvents = '';
-                btn.style.background = '';
-                form.reset();
-            }, 3000);
-        })
-        .catch(error => {
-            btn.innerHTML = `<span>Ein Fehler ist aufgetreten!</span>`;
-            btn.style.background = '#ef4444';
-            
-            setTimeout(() => {
-                btn.innerHTML = originalContent;
-                btn.style.pointerEvents = '';
-                btn.style.background = '';
-            }, 3000);
-        });
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.style.pointerEvents = '';
+                    btn.style.background = '';
+                    form.reset();
+                }, 3000);
+            })
+            .catch(error => {
+                btn.innerHTML = `<span>Ein Fehler ist aufgetreten!</span>`;
+                btn.style.background = '#ef4444';
+
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.style.pointerEvents = '';
+                    btn.style.background = '';
+                }, 3000);
+            });
     });
 }
 
@@ -355,7 +407,7 @@ function initTypewriter() {
 
     function type() {
         const currentPhrase = phrases[phraseIndex];
-        
+
         if (isDeleting) {
             el.textContent = currentPhrase.substring(0, charIndex - 1);
             charIndex--;
@@ -392,11 +444,11 @@ function initParticles() {
         const p = document.createElement('span');
         p.className = 'particle';
         p.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-        
+
         // Random position
         p.style.left = Math.random() * 100 + '%';
         p.style.top = Math.random() * 100 + '%';
-        
+
         // Random animation properties
         const duration = 3 + Math.random() * 4;
         const delay = Math.random() * 5;
