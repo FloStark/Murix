@@ -19,6 +19,24 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://murix.at/lokales-seo-graz</loc>
+        <lastmod>2026-05-22</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/referenzen</loc>
+        <lastmod>2026-05-22</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/webdesign-kanzleien</loc>
+        <lastmod>2026-05-22</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://murix.at/microsoft-365</loc>
         <lastmod>2026-04-30</lastmod>
         <priority>0.9</priority>
