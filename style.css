@@ -442,9 +442,9 @@ a {
     box-shadow: var(--shadow-lg);
     padding: 16px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    min-width: 520px;
+    min-width: 720px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.25s ease;
