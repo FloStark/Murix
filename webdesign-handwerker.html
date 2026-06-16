@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website für Handwerker & Installateure – Webdesign | Murix</title>
+    <title>Webdesign für Handwerker & Installateure | Murix</title>
     <meta name="description"
         content="Professionelle Website für Handwerker, Installateure &amp; Baubetriebe in Graz. Lokale Sichtbarkeit bei Google, Fotogalerien &amp; Neukundengewinnung nach Maß.">
     <meta name="keywords"
         content="Website Handwerker, Homepage Installateur, Webdesign Handwerker, Website Elektriker, Homepage Handwerksbetrieb">
+    <meta name="author" content="Murix">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://murix.at/webdesign-handwerker">
+    <meta property="og:title" content="Website für Handwerker & Installateure – Webdesign | Murix">
+    <meta property="og:description" content="Professionelle Website für Handwerker, Installateure & Baubetriebe in Graz. Lokale Sichtbarkeit bei Google & Neukundengewinnung.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_AT">
+    <meta property="og:url" content="https://murix.at/webdesign-handwerker">
+    <meta property="og:image" content="https://murix.at/logo.svg">
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Website für Handwerker & Installateure – Webdesign | Murix">
@@ -22,13 +29,36 @@
     <meta name="geo.placename" content="Graz" />
     <meta name="geo.position" content="47.0621;15.4744" />
     <meta name="ICBM" content="47.0621, 15.4744" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://app.cal.eu">
+    <link rel="alternate" hreflang="de-AT" href="https://murix.at/webdesign-handwerker">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Webdesign für Handwerker & Installateure",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Murix",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Graz",
+                "addressRegion": "Steiermark",
+                "addressCountry": "AT"
+            }
+        },
+        "description": "Professionelle Websites für Handwerker, Installateure und Baubetriebe in Graz",
+        "areaServed": "Graz"
+    }
+    </script>
 </head>
 
 <body>
     <!-- Skip Link -->
-    <a href="/#main-content" class="skip-link">Zum Inhalt springen</a>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -71,15 +101,31 @@
                 <li><a href="referenzen" class="nav-link">Referenzen</a></li>
                 <li><a href="/#faq" class="nav-link">FAQ</a></li>
                 <li><a href="ueber-uns" class="nav-link">Über uns</a></li>
-                <li><a href="javascript:void(0)" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
+                <li><a href="/#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
         </div>
+        </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/"><span itemprop="name">Startseite</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li><span class="breadcrumb-separator">›</span></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="current" itemprop="name">Webdesign Handwerker</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
     </nav>
 
-    
     <main id="main-content">
-<section class="subpage-hero">
+<section class="subpage-hero" style="padding-top: 40px;">
         <div class="container">
             <div class="subpage-hero-content reveal">
                 <span class="section-tag">Webdesign für Handwerker</span>
@@ -88,7 +134,7 @@
                 <p class="hero-subtitle">Installateure, Elektriker, Fliesenleger – Sie machen hervorragende Arbeit. Aber
                     finden Ihre Kunden Sie auch online? Wir ändern das.</p>
                 <div class="hero-ctas">
-                    <a href="javascript:void(0)" class="btn btn-primary magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Jetzt Website anfragen</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    <a href="/#kontakt" class="btn btn-primary magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Jetzt Website anfragen</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg></a>
@@ -159,7 +205,7 @@
                     <div class="sidebar-cta">
                         <h3>Hände schmutzig, Website sauber</h3>
                         <p>Sie machen Ihr Handwerk – wir machen Ihre Website.</p>
-                        <a href="/#kontakt" class="btn btn-primary btn-full magnetic"><span>Jetzt
+                        <a href="/#kontakt" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Jetzt
                                 anfragen</span></a>
                     </div>
                     <div class="sidebar-links">
@@ -183,7 +229,7 @@
                     <div class="cta-orb"></div>
                 </div><span class="section-tag">Handwerker-Website gesucht?</span>
                 <h2>Wir bauen Ihre Website.</h2>
-                <p>Kostenlos und unverbindlich besprechen, was Sie brauchen.</p><a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                <p>Kostenlos und unverbindlich besprechen, was Sie brauchen.</p><a href="/#kontakt" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                     <span>Kostenloses Erstgespräch buchen</span>
                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />

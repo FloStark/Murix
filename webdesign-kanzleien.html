@@ -25,7 +25,10 @@
     <meta name="geo.placename" content="Graz" />
     <meta name="geo.position" content="47.0621;15.4744" />
     <meta name="ICBM" content="47.0621, 15.4744" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://app.cal.eu">
+    <link rel="alternate" hreflang="de-AT" href="https://murix.at/webdesign-kanzleien">
     <link rel="stylesheet" href="style.css">
 
     <!-- Structured Data -->
@@ -84,7 +87,7 @@
 
 <body>
     <!-- Skip Link -->
-    <a href="/#main-content" class="skip-link">Zum Inhalt springen</a>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -129,22 +132,39 @@
                 <li><a href="referenzen" class="nav-link">Referenzen</a></li>
                 <li><a href="/#faq" class="nav-link">FAQ</a></li>
                 <li><a href="ueber-uns" class="nav-link">Über uns</a></li>
-                <li><a href="javascript:void(0)" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
+                <li><a href="/#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+        </div>
+        </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/"><span itemprop="name">Startseite</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li><span class="breadcrumb-separator">›</span></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="current" itemprop="name">Webdesign Kanzleien & Berater</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
         </div>
     </nav>
 
     <main id="main-content">
         <!-- HERO -->
-        <section class="subpage-hero">
+        <section class="subpage-hero" style="padding-top: 40px;">
             <div class="container">
                 <div class="subpage-hero-content reveal">
                     <span class="section-tag">Kanzleien &amp; Berater</span>
                     <h1 class="hero-title">Webdesign für Anwälte &<br><span class="text-gradient-animated">Steuerberater Graz.</span></h1>
                     <p class="hero-subtitle">Seriös, barrierefrei und zu 100 % datenschutzkonform. Wir erstellen erstklassige Internetauftritte für Kanzleien, Steuerberater und Notare, die Mandanten überzeugen.</p>
                     <div class="hero-ctas">
-                        <a href="javascript:void(0)" class="btn btn-primary magnetic" data-cal-link="murix/30min"
+                        <a href="/#kontakt" class="btn btn-primary magnetic" data-cal-link="murix/30min"
                             data-cal-namespace="30min"
                             data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                             <span>Kostenfreie Beratung anfordern</span>
@@ -270,7 +290,7 @@
                         <div class="sidebar-cta">
                             <h3>Kanzlei-Erstgespräch</h3>
                             <p>Lassen Sie uns besprechen, wie wir Ihre Kanzlei optimal im Internet präsentieren können.</p>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min"
+                            <a href="/#kontakt" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min"
                                 data-cal-namespace="30min"
                                 data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Termin online buchen</span></a>
                         </div>
@@ -299,7 +319,7 @@
                     <span class="section-tag">Digitale Präsenz</span>
                     <h2>Mandanten dort abholen,<br>wo sie nach Hilfe suchen.</h2>
                     <p>Optimieren wir Ihre Online-Sichtbarkeit und Ihren digitalen Kanzlei-Auftritt nachhaltig.</p>
-                    <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min"
+                    <a href="/#kontakt" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min"
                         data-cal-namespace="30min"
                         data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                         <span>Kostenloses Erstgespräch buchen</span>

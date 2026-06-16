@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Service Graz: Microsoft 365 & IT-Dienstleistungen | Murix</title>
+    <title>Microsoft 365 für KMU | IT Service & Support Graz | Murix</title>
     <meta name="description"
         content="Ihr IT Service in Graz: Murix unterstützt KMU bei der IT-Modernisierung mit Microsoft 365. IT Consulting, Einrichtung & Betreuung ohne eigene Server.">
     <meta name="keywords"
@@ -26,7 +26,10 @@
     <meta name="geo.placename" content="Graz" />
     <meta name="geo.position" content="47.0621;15.4744" />
     <meta name="ICBM" content="47.0621, 15.4744" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://app.cal.eu">
+    <link rel="alternate" hreflang="de-AT" href="https://murix.at/microsoft-365">
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
@@ -57,7 +60,7 @@
 
 <body>
     <!-- Skip Link -->
-    <a href="/#main-content" class="skip-link">Zum Inhalt springen</a>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -100,15 +103,31 @@
                 <li><a href="referenzen" class="nav-link">Referenzen</a></li>
                 <li><a href="/#faq" class="nav-link">FAQ</a></li>
                 <li><a href="ueber-uns" class="nav-link">Über uns</a></li>
-                <li><a href="javascript:void(0)" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
+                <li><a href="/#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
         </div>
+        </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/"><span itemprop="name">Startseite</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li><span class="breadcrumb-separator">›</span></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="current" itemprop="name">Microsoft 365 für KMU</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
     </nav>
 
-    
     <main id="main-content">
-<section class="subpage-hero">
+<section class="subpage-hero" style="padding-top: 40px;">
         <div class="container">
             <div class="subpage-hero-content reveal">
                 <span class="section-tag">IT Service & IT-Dienstleistungen</span>
@@ -228,7 +247,7 @@
                         <h3>IT-Beratung anfragen</h3>
                         <p>Kostenloses Erstgespräch – wir analysieren Ihre aktuelle IT und zeigen Ihnen, wie Microsoft 365
                             helfen kann.</p>
-                        <a href="javascript:void(0)" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Gespräch
+                        <a href="/#kontakt" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Gespräch
                                 vereinbaren</span></a>
                     </div>
                     <div class="sidebar-links">
@@ -254,7 +273,7 @@
                 <span class="section-tag">Bereit für moderne IT?</span>
                 <h2>Ihre IT-Modernisierung<br>beginnt hier.</h2>
                 <p>Lassen Sie uns in einem kostenlosen Erstgespräch besprechen, wie wir Ihnen helfen können.</p>
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                <a href="/#kontakt" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                     <span>Kostenloses Erstgespräch buchen</span>
                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG erklärt | Mit eigenen Dokumenten per KI chatten | Murix</title>
+    <meta name="description"
+        content="RAG (Retrieval-Augmented Generation) macht Ihre internen PDFs, Handbücher und Verträge per KI-Chat durchsuchbar – DSGVO-konform und komplett offline.">
+    <meta name="keywords"
+        content="RAG Unternehmen, Retrieval Augmented Generation, KI Wissensdatenbank, Dokumenten KI, RAG erklärt, lokale RAG">
+    <meta name="author" content="Murix">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://murix.at/ratgeber/rag-wissensdatenbank-unternehmen">
+    <meta property="og:title" content="RAG erklärt: Wie Ihr Unternehmen mit eigenen Dokumenten chattet">
+    <meta property="og:description"
+        content="RAG macht Ihre internen Dokumente per KI-Chat durchsuchbar – DSGVO-konform und komplett offline.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="de_AT">
+    <meta property="og:url" content="https://murix.at/ratgeber/rag-wissensdatenbank-unternehmen">
+    <meta property="og:image" content="https://murix.at/logo.svg">
+    <meta property="article:published_time" content="2026-06-16">
+    <meta property="article:author" content="Murix">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RAG erklärt: Wie Ihr Unternehmen mit eigenen Dokumenten chattet">
+    <meta name="twitter:description"
+        content="RAG macht Ihre internen Dokumente per KI-Chat durchsuchbar – DSGVO-konform und komplett offline.">
+    <meta name="twitter:image" content="https://murix.at/logo.svg">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="AT-6" />
+    <meta name="geo.placename" content="Graz" />
+    <meta name="geo.position" content="47.0621;15.4744" />
+    <meta name="ICBM" content="47.0621, 15.4744" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://app.cal.eu">
+    <link rel="alternate" hreflang="de-AT" href="https://murix.at/ratgeber/rag-wissensdatenbank-unternehmen">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "RAG erklärt: Wie Ihr Unternehmen mit eigenen Dokumenten chattet",
+        "description": "RAG (Retrieval-Augmented Generation) macht Ihre internen Dokumente per KI-Chat durchsuchbar.",
+        "datePublished": "2026-06-16",
+        "author": {
+            "@type": "Organization",
+            "name": "Murix",
+            "url": "https://murix.at"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Murix",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://murix.at/logo.svg"
+            }
+        },
+        "mainEntityOfPage": "https://murix.at/ratgeber/rag-wissensdatenbank-unternehmen"
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo"><img src="../logo.svg" alt="Murix" class="logo-img"></a>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-dropdown">
+                    <a href="/#leistungen" class="nav-link">Leistungen <svg aria-hidden="true" class="dropdown-arrow" width="10"
+                            height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg></a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">KI-Services</span>
+                            <a href="../lokale-ki-unternehmen">Lokale KI-Modelle</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">IT-Services</span>
+                            <a href="../microsoft-365">Microsoft 365 für KMU</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Webdesign & SEO</span>
+                            <a href="../webdesign-graz">Webdesign Graz</a>
+                            <a href="../seo-graz">SEO Graz</a>
+                            <a href="../lokales-seo-graz">Lokales SEO Graz</a>
+                            <a href="../webdesign-steiermark">Webdesign Steiermark</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <span class="dropdown-label">Branchen</span>
+                            <a href="../webdesign-handwerker">Handwerker</a>
+                            <a href="../webdesign-aerzte">Ärzte &amp; Therapeuten</a>
+                            <a href="../webdesign-gastronomie">Gastronomie</a>
+                            <a href="../webdesign-immobilien">Immobilien</a>
+                            <a href="../webdesign-kanzleien">Kanzleien &amp; Berater</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/#vorteile" class="nav-link">Vorteile</a></li>
+                <li><a href="../referenzen" class="nav-link">Referenzen</a></li>
+                <li><a href="/#faq" class="nav-link">FAQ</a></li>
+                <li><a href="../ueber-uns" class="nav-link">Über uns</a></li>
+                <li><a href="/#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/"><span itemprop="name">Startseite</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li><span class="breadcrumb-separator">›</span></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="../ratgeber"><span itemprop="name">Ratgeber</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li><span class="breadcrumb-separator">›</span></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="current" itemprop="name">RAG Wissensdatenbank</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="subpage-hero" style="padding-top: 40px;">
+            <div class="container">
+                <div class="subpage-hero-content reveal">
+                    <span class="section-tag">RAG</span>
+                    <h1 class="hero-title">RAG erklärt:<br><span class="text-gradient-animated">Wie Ihr Unternehmen mit eigenen Dokumenten chattet.</span></h1>
+                    <div class="blog-article-meta" style="justify-content:center;">
+                        <span>
+                            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            <time datetime="2026-06-16">16. Juni 2026</time>
+                        </span>
+                        <span>
+                            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            10 Min. Lesezeit
+                        </span>
+                        <span>Von Murix</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section subpage-content blog-article">
+            <div class="container">
+                <div class="content-layout">
+                    <article class="content-main reveal">
+                        <h2>Was ist RAG? Einfach erklärt</h2>
+                        <p>Stellen Sie sich vor, Sie könnten eine KI fragen: <em>„Was steht in unserem Wartungsvertrag mit Firma X zum Thema Haftungsausschluss?"</em> – und die KI durchsucht sofort alle Ihre Verträge und liefert eine präzise Antwort mit Quellenangabe. Das ist RAG.</p>
+                        <p><strong>RAG steht für Retrieval-Augmented Generation</strong> – auf Deutsch: „Abruf-erweiterte Texterzeugung". Das Prinzip ist einfach:</p>
+
+                        <ol class="styled-list">
+                            <li><strong>Ihre Dokumente werden indexiert:</strong> PDFs, Word-Dateien, E-Mails, Handbücher – alles wird in eine durchsuchbare Wissensdatenbank (Vektordatenbank) umgewandelt.</li>
+                            <li><strong>Sie stellen eine Frage:</strong> In natürlicher Sprache, genau wie bei ChatGPT.</li>
+                            <li><strong>Die KI sucht relevante Passagen:</strong> Das System findet automatisch die passenden Textabschnitte aus Ihren Dokumenten.</li>
+                            <li><strong>Die KI formuliert eine Antwort:</strong> Basierend auf den gefundenen Passagen generiert das Sprachmodell eine verständliche Antwort – inklusive Quellennachweis.</li>
+                        </ol>
+
+                        <blockquote>„RAG ist wie ein allwissender Assistent, der jedes Dokument in Ihrem Unternehmen gelesen hat und Ihnen auf jede Frage eine fundierte Antwort geben kann."</blockquote>
+
+                        <h2>Warum normale KI alleine nicht reicht</h2>
+                        <p>Ein normales Sprachmodell (wie ChatGPT) kennt nur, was in seinen Trainingsdaten enthalten war. Das bedeutet:</p>
+                        <ul class="styled-list">
+                            <li>Es kennt <strong>Ihre internen Dokumente nicht</strong>.</li>
+                            <li>Es kann <strong>keine aktuellen Informationen</strong> abrufen.</li>
+                            <li>Es <strong>„halluziniert"</strong> Antworten, wenn es die richtige Antwort nicht kennt – und das sieht täuschend echt aus.</li>
+                        </ul>
+                        <p>RAG löst genau diese Probleme: Statt zu raten, <strong>sucht die KI in Ihren echten Dokumenten</strong> und antwortet nur auf Basis dessen, was dort steht. Wenn keine passende Information gefunden wird, sagt das System ehrlich: „Dazu habe ich keine Information."</p>
+
+                        <h2>Praxisbeispiele: Wo RAG echten Mehrwert schafft</h2>
+                        <p>RAG ist keine Zukunftsmusik – es wird heute bereits in Unternehmen eingesetzt:</p>
+
+                        <h3>🏥 Arztpraxen & Gesundheitswesen</h3>
+                        <p>Schneller Zugriff auf medizinische Leitlinien, Abrechnungsrichtlinien und Praxishandbücher. Statt stundenlang in Ordnern zu suchen, stellt das Praxisteam eine Frage und bekommt sofort die relevante Passage angezeigt.</p>
+
+                        <h3>⚖️ Kanzleien & Steuerberater</h3>
+                        <p>Verträge, Urteile und Gesetzestexte durchsuchbar machen. Ein Anwalt kann fragen: <em>„Gibt es in unserem Archiv Verträge mit ähnlichen Haftungsklauseln?"</em> – und das System findet die relevanten Dokumente in Sekunden.</p>
+
+                        <h3>🏗️ Handwerksbetriebe & Industrie</h3>
+                        <p>Technische Datenblätter, Sicherheitsvorschriften und Wartungsprotokolle per Chat durchsuchen. Neue Mitarbeiter können Fragen stellen, statt erfahrene Kollegen zu unterbrechen.</p>
+
+                        <h3>📋 Allgemein: Jedes Unternehmen</h3>
+                        <p>Interne Wissensdatenbanken, HR-Handbücher, Onboarding-Dokumentation, Prozessbeschreibungen – überall dort, wo Mitarbeiter nach Informationen suchen müssen, spart RAG Zeit.</p>
+
+                        <h2>Lokal vs. Cloud: Wo laufen die Daten?</h2>
+                        <p>RAG kann sowohl in der Cloud als auch komplett lokal betrieben werden. Für Unternehmen mit sensiblen Daten empfehlen wir immer die lokale Variante:</p>
+
+                        <div class="info-box">
+                            <h4>🏠 Lokales RAG (Empfehlung)</h4>
+                            <p><strong>Alle Dokumente bleiben auf Ihrer eigenen Hardware.</strong> Das Sprachmodell läuft lokal, die Vektordatenbank läuft lokal. Kein Byte verlässt Ihr Netzwerk. Perfekt für DSGVO-Compliance.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>☁️ Cloud RAG</h4>
+                            <p>Über Dienste wie Azure OpenAI oder AWS Bedrock. Höhere Leistung möglich, aber <strong>Dokumente werden in die Cloud hochgeladen</strong>. Nur sinnvoll bei nicht-sensiblen Daten oder mit europäischem Cloud-Vertrag.</p>
+                        </div>
+
+                        <h2>Was braucht man für ein lokales RAG-System?</h2>
+                        <p>Überraschend wenig. Ein typisches Setup für ein KMU besteht aus:</p>
+                        <ul class="styled-list">
+                            <li><strong>GPU-Workstation oder Server:</strong> Mit einer modernen NVIDIA-Grafikkarte (ab ca. 16 GB VRAM) für das Sprachmodell.</li>
+                            <li><strong>Vektordatenbank:</strong> Open-Source-Software wie ChromaDB oder Milvus, die Ihre Dokumente in durchsuchbare Vektoren umwandelt.</li>
+                            <li><strong>Open-Source-LLM:</strong> Ein Sprachmodell wie Llama 4, Gemma 4, Qwen oder DeepSeek-R1, das die Antworten generiert.</li>
+                            <li><strong>Web-Interface:</strong> Eine benutzerfreundliche Chat-Oberfläche, über die Ihre Mitarbeiter Fragen stellen können.</li>
+                        </ul>
+                        <p>Murix kümmert sich um die komplette Einrichtung – von der Hardware-Beratung bis zum fertigen System.</p>
+
+                        <h2>Wie genau ist RAG? Kann man den Antworten vertrauen?</h2>
+                        <p>RAG ist <strong>deutlich zuverlässiger als ein normales KI-Modell</strong>, weil es immer auf echte Quelldokumente zurückgreift. Trotzdem gibt es wichtige Punkte:</p>
+                        <ul class="styled-list">
+                            <li><strong>Quellenangaben prüfen:</strong> Gute RAG-Systeme zeigen immer die Originalquelle an. Mitarbeiter sollten bei kritischen Entscheidungen die Quelle gegenprüfen.</li>
+                            <li><strong>Qualität der Dokumente:</strong> RAG ist nur so gut wie die Dokumente, die eingespeist werden. Veraltete oder fehlerhafte Dokumente führen zu falschen Antworten.</li>
+                            <li><strong>Kein Ersatz für Expertise:</strong> RAG ist ein Werkzeug, das Fachkräfte unterstützt – nicht ersetzt. Es spart Zeit beim Suchen, aber die finale Bewertung bleibt beim Menschen.</li>
+                        </ul>
+
+                        <h2>Fazit: RAG als Wettbewerbsvorteil</h2>
+                        <p>Unternehmen, die RAG einsetzen, profitieren von:</p>
+                        <ul class="styled-list">
+                            <li><strong>Drastischer Zeitersparnis</strong> beim Suchen nach internen Informationen</li>
+                            <li><strong>Besserer Wissensbewahrung</strong> – Firmenwissen geht nicht verloren, wenn erfahrene Mitarbeiter gehen</li>
+                            <li><strong>Schnellerem Onboarding</strong> neuer Mitarbeiter</li>
+                            <li><strong>Höherer Qualität</strong> bei datengestützten Entscheidungen</li>
+                        </ul>
+
+                        <p>Wenn Sie überlegen, wie Sie KI sinnvoll in Ihrem Unternehmen einsetzen können, ist RAG einer der konkretesten und wertvollsten Anwendungsfälle. Wir beraten Sie gerne dazu. <a href="/#kontakt">Kostenloses Erstgespräch vereinbaren.</a></p>
+
+                        <p><strong>Weiterführend:</strong> Lesen Sie auch unseren Artikel <a href="lokale-ki-vs-chatgpt">„Lokale KI vs. ChatGPT"</a>, um zu verstehen, warum lokale Modelle für Unternehmen die bessere Wahl sind.</p>
+                    </article>
+
+                    <aside class="content-sidebar reveal" data-delay="200">
+                        <div class="sidebar-cta">
+                            <h3>RAG für Ihren Betrieb?</h3>
+                            <p>Wir zeigen Ihnen, wie Sie Ihre Dokumente per KI durchsuchbar machen.</p>
+                            <a href="/#kontakt" class="btn btn-primary btn-full magnetic" data-cal-link="murix/30min" data-cal-namespace="30min"
+                                data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Jetzt beraten lassen</span></a>
+                        </div>
+                        <div class="sidebar-links">
+                            <h4>Verwandte Artikel</h4>
+                            <ul>
+                                <li><a href="lokale-ki-vs-chatgpt">Lokale KI vs. ChatGPT</a></li>
+                                <li><a href="../lokale-ki-unternehmen">Lokale KI-Modelle – Übersicht</a></li>
+                                <li><a href="../microsoft-365">Microsoft 365 für KMU</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <div class="cta-orbs">
+                        <div class="cta-orb"></div>
+                        <div class="cta-orb"></div>
+                    </div>
+                    <span class="section-tag">Wissen nutzbar machen?</span>
+                    <h2>RAG-System für Ihr Unternehmen.</h2>
+                    <p>Lassen Sie uns besprechen, wie Sie Ihre Firmendokumente intelligent durchsuchbar machen.</p>
+                    <a href="/#kontakt" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                        <span>Kostenloses Erstgespräch buchen</span>
+                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="/" class="footer-logo-link"><img src="../favicon.ico"
+                            alt="Murix" class="footer-logo-icon"><span class="footer-logo-text">MURIX</span></a>
+                    <p>Lokale KI-Modelle, IT-Services &amp; Webdesign aus Graz.<br>100% DSGVO-konforme KI-Lösungen für KMU.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="../lokale-ki-unternehmen">Lokale KI-Modelle</a></li>
+                        <li><a href="../microsoft-365">Microsoft 365 für KMU</a></li>
+                        <li><a href="../webdesign-graz">Webdesign Graz</a></li>
+                        <li><a href="../seo-graz">SEO Graz</a></li>
+                        <li><a href="../lokales-seo-graz">Lokales SEO Graz</a></li>
+                        <li><a href="../referenzen">Referenzen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="mailto:hello@murix.at">hello@murix.at</a></li>
+                        <li><span>Waltendorfer Hauptstraße 84B</span></li>
+                        <li><span>8010 Graz, Steiermark</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="../impressum">Impressum</a></li>
+                        <li><a href="../datenschutz">Datenschutz</a></li>
+                        <li><a href="../agb">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Murix. Mit ☕ in Graz gemacht.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
+    Cal("init", "30min", {origin:"https://app.cal.eu"});
+    </script>
+    <!-- Cal element-click embed code ends -->
+</body>
+
+</html>

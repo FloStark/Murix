@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website für Ärzte & Therapeuten – Webdesign | Murix</title>
+    <title>Webdesign für Ärzte & Therapeuten | Murix</title>
     <meta name="description"
         content="DSGVO-konformes Webdesign für Ärzte, Therapeuten &amp; Ordinationen in Graz. Barrierefrei, Latido-Anbindung &amp; Vertrauensaufbau – ohne Cookie-Banner.">
     <meta name="keywords"
         content="Website Arzt, Homepage Arztpraxis, Webdesign Ärzte, Website Therapeuten, Homepage Ordination">
+    <meta name="author" content="Murix">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://murix.at/webdesign-aerzte">
+    <meta property="og:title" content="Website für Ärzte & Therapeuten – Webdesign | Murix">
+    <meta property="og:description" content="DSGVO-konformes Webdesign für Ärzte, Therapeuten & Ordinationen in Graz. Barrierefrei, Latido-Anbindung & Vertrauensaufbau.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_AT">
+    <meta property="og:url" content="https://murix.at/webdesign-aerzte">
+    <meta property="og:image" content="https://murix.at/logo.svg">
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Website für Ärzte & Therapeuten – Webdesign | Murix">
@@ -22,13 +29,36 @@
     <meta name="geo.placename" content="Graz" />
     <meta name="geo.position" content="47.0621;15.4744" />
     <meta name="ICBM" content="47.0621, 15.4744" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://app.cal.eu">
+    <link rel="alternate" hreflang="de-AT" href="https://murix.at/webdesign-aerzte">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Webdesign für Ärzte & Therapeuten",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Murix",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Graz",
+                "addressRegion": "Steiermark",
+                "addressCountry": "AT"
+            }
+        },
+        "description": "DSGVO-konformes Webdesign für Ärzte, Therapeuten und Ordinationen in Graz",
+        "areaServed": "Graz"
+    }
+    </script>
 </head>
 
 <body>
     <!-- Skip Link -->
-    <a href="/#main-content" class="skip-link">Zum Inhalt springen</a>
+    <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -71,22 +101,38 @@
                 <li><a href="referenzen" class="nav-link">Referenzen</a></li>
                 <li><a href="/#faq" class="nav-link">FAQ</a></li>
                 <li><a href="ueber-uns" class="nav-link">Über uns</a></li>
-                <li><a href="javascript:void(0)" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
+                <li><a href="/#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
         </div>
+        </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="/"><span itemprop="name">Startseite</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li><span class="breadcrumb-separator">›</span></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span class="current" itemprop="name">Webdesign Ärzte & Therapeuten</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
     </nav>
 
-    
     <main id="main-content">
-<section class="subpage-hero">
+<section class="subpage-hero" style="padding-top: 40px;">
         <div class="container">
             <div class="subpage-hero-content reveal">
                 <span class="section-tag">Webdesign für Ärzte</span>
                 <h1 class="hero-title">Vertrauen beginnt<br><span class="text-gradient-animated">online.</span></h1>
                 <p class="hero-subtitle">Patienten suchen ihren Arzt heute bei Google. Eine professionelle Website
                     zeigt, dass Sie erfahren und vertrauenswürdig sind.</p>
-                <div class="hero-ctas"><a href="javascript:void(0)" class="btn btn-primary magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Jetzt Website
+                <div class="hero-ctas"><a href="/#kontakt" class="btn btn-primary magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'><span>Jetzt Website
                             anfragen</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7" />
@@ -180,7 +226,7 @@
                 </div><span class="section-tag">Bereit?</span>
                 <h2>Ihre Ordination verdient eine Website.</h2>
                 <p>Lassen Sie uns in einem kostenlosen Erstgespräch besprechen, wie wir Ihnen helfen können.</p>
-                <a href="javascript:void(0)" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
+                <a href="/#kontakt" class="btn btn-primary btn-lg magnetic" data-cal-link="murix/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>
                     <span>Kostenloses Erstgespräch buchen</span>
                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7" />
