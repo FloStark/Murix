@@ -2624,7 +2624,7 @@ a {
 
 /* ============ BREADCRUMB ============ */
 .breadcrumb {
-    padding: 100px 0 0;
+    padding: 120px 0 15px;
     background: var(--bg-secondary);
 }
 
@@ -2813,7 +2813,7 @@ a {
     }
 
     .breadcrumb {
-        padding: 80px 0 0;
+        padding: 100px 0 15px;
     }
 }
 
