@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murix – Webdesign, IT Service & IT-Dienstleistungen Graz</title>
+    <title>Webdesign Graz & IT Service für KMU | Murix</title>
     <meta name="description"
-        content="Murix aus Graz: Ihr Partner für modernes Webdesign und IT-Dienstleistungen (IT Service, Microsoft 365) für KMU. Fertige Website zum Festpreis & Cloud-IT.">
+        content="Murix aus Graz erstellt schnelle Websites mit SEO zum Festpreis und unterstützt KMU bei Microsoft 365, IT Service und Cloud-IT. Kostenloses Erstgespräch buchen.">
     <meta name="keywords"
         content="Webdesign Graz, IT Service Graz, IT-Dienstleistungen Graz, Homepage erstellen lassen, SEO Graz, Microsoft 365 Graz, IT Consulting, Murix">
     <meta name="author" content="Murix">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://murix.at/">
-    <meta property="og:title" content="Murix – Webdesign, IT Service & IT-Dienstleistungen Graz">
+    <meta property="og:title" content="Webdesign Graz & IT Service für KMU | Murix">
     <meta property="og:description"
-        content="Ihr Partner für modernes Webdesign und IT Service (Microsoft 365) für KMU aus Graz.">
+        content="Schnelle Websites, SEO und Microsoft 365 Betreuung für KMU aus Graz. Zum Festpreis, ohne Abo-Zwang.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_AT">
+    <meta property="og:url" content="https://murix.at/">
+    <meta property="og:site_name" content="Murix">
+    <meta property="og:image" content="https://murix.at/logo.svg">
+    <meta property="og:image:alt" content="Murix Logo – Webdesign und IT-Services aus Graz">
+    <meta property="og:image:type" content="image/svg+xml">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Murix – Webdesign, IT Service & IT-Dienstleistungen Graz">
-    <meta name="twitter:description" content="Ihr Partner für modernes Webdesign und IT Service (Microsoft 365) für KMU aus Graz.">
+    <meta name="twitter:title" content="Webdesign Graz & IT Service für KMU | Murix">
+    <meta name="twitter:description" content="Schnelle Websites, SEO und Microsoft 365 Betreuung für KMU aus Graz. Zum Festpreis, ohne Abo-Zwang.">
     <meta name="twitter:image" content="https://murix.at/logo.svg">
+    <meta name="twitter:image:alt" content="Murix Logo – Webdesign und IT-Services aus Graz">
 
     <!-- Geo Tags -->
     <meta name="geo.region" content="AT-6" />
@@ -36,20 +42,68 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Murix",
-        "description": "Webdesign, SEO und IT-Dienstleistungen für KMU aus Graz. Websites zum Festpreis und Microsoft 365 Betreuung.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Waltendorfer Hauptstraße 84B",
-            "postalCode": "8010",
-            "addressLocality": "Graz",
-            "addressRegion": "Steiermark",
-            "addressCountry": "AT"
-        },
-        "url": "https://murix.at",
-        "email": "hello@murix.at",
-        "priceRange": "€€"
+        "@graph": [
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://murix.at/#business",
+                "name": "Murix",
+                "description": "Webdesign, SEO und IT-Dienstleistungen für KMU aus Graz. Websites zum Festpreis und Microsoft 365 Betreuung.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Waltendorfer Hauptstraße 84B",
+                    "postalCode": "8010",
+                    "addressLocality": "Graz",
+                    "addressRegion": "Steiermark",
+                    "addressCountry": "AT"
+                },
+                "url": "https://murix.at",
+                "logo": "https://murix.at/logo.svg",
+                "image": "https://murix.at/logo.svg",
+                "email": "hello@murix.at",
+                "priceRange": "€€",
+                "areaServed": ["Graz", "Steiermark", "Österreich"],
+                "makesOffer": [
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Webdesign Graz"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Graz"}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Microsoft 365 Betreuung"}}
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://murix.at/#website",
+                "url": "https://murix.at/",
+                "name": "Murix",
+                "publisher": {"@id": "https://murix.at/#business"},
+                "inLanguage": "de-AT"
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://murix.at/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Was kostet eine Website bei Murix?",
+                        "acceptedAnswer": {"@type": "Answer", "text": "Unsere Websites starten ab 690 Euro als Einmalzahlung für einen OnePager. Im kostenlosen Erstgespräch besprechen wir Ihre Anforderungen und erstellen ein individuelles Angebot ohne versteckte Kosten."}
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Gibt es wirklich keine laufenden Kosten?",
+                        "acceptedAnswer": {"@type": "Answer", "text": "Bei Static Pages gibt es keinen Abo-Zwang. Sobald die Seite bezahlt ist, gehört sie Ihnen und bleibt online. Murix Care Pakete sind optional für Hosting, Backups oder Sicherheitsupdates."}
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Wie lange dauert es, bis meine Website fertig ist?",
+                        "acceptedAnswer": {"@type": "Answer", "text": "In der Regel ist Ihre Website innerhalb von 5 bis 10 Werktagen fertig. Bei größeren Projekten kann es etwas länger dauern."}
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Brauche ich technische Vorkenntnisse?",
+                        "acceptedAnswer": {"@type": "Answer", "text": "Nein. Murix übernimmt Design, Entwicklung, Texte, SEO, Domain und Hosting, damit Sie sich nicht um technische Details kümmern müssen."}
+                    }
+                ],
+                "inLanguage": "de-AT"
+            }
+        ]
     }
     </script>
 </head>
@@ -97,6 +151,7 @@
                             <a href="was-kostet-eine-website">Was kostet eine Website?</a>
                             <a href="website-erstellen-lassen">Website erstellen lassen</a>
                             <a href="static-vs-cms">Static vs CMS</a>
+                            <a href="blog">Blog</a>
                         </div>
                     </div>
                 </li>
@@ -105,6 +160,7 @@
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#preise" class="nav-link">Preise</a></li>
                 <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="blog" class="nav-link">Blog</a></li>
                 <li><a href="ueber-uns" class="nav-link">Über uns</a></li>
                 <li><a href="#kontakt" class="nav-link nav-cta" data-cal-link="murix/30min" data-cal-namespace="30min"
                         data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Jetzt starten</a>
@@ -425,7 +481,7 @@
                             <div class="browser-dots"><span></span><span></span><span></span></div>
                             <div class="browser-content">
                                 <img src="testimonials/wattworks.png" alt="WattWorks GmbH Website"
-                                    class="portfolio-screenshot">
+                                    class="portfolio-screenshot" width="1178" height="910" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -449,7 +505,7 @@
                             <div class="browser-dots"><span></span><span></span><span></span></div>
                             <div class="browser-content">
                                 <img src="testimonials/kindermarkenschuhe.png" alt="Vega Nova Graz Website"
-                                    class="portfolio-screenshot">
+                                    class="portfolio-screenshot" width="1317" height="909" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -468,7 +524,7 @@
                         <div class="portfolio-mockup-browser">
                             <div class="browser-dots"><span></span><span></span><span></span></div>
                             <div class="browser-content">
-                                <img src="testimonials/et-sl.png" alt="ET-SL GmbH Website" class="portfolio-screenshot">
+                                <img src="testimonials/et-sl.png" alt="ET-SL GmbH Website" class="portfolio-screenshot" width="1363" height="912" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -500,7 +556,7 @@
                     <p>"Florian hat unsere Website für WattWorks professionell und schnell umgesetzt. SEO war von Anfang
                         an mitgedacht – wir werden jetzt österreichweit gefunden. Klare Empfehlung!"</p>
                     <div class="testimonial-author">
-                        <img src="testimonials/wattworks_small.png" alt="WattWorks Logo" class="author-avatar-img">
+                        <img src="testimonials/wattworks_small.png" alt="WattWorks Logo" class="author-avatar-img" width="565" height="578" loading="lazy" decoding="async">
                         <div>
                             <strong>WattWorks GmbH</strong>
                             <span>PV-Montage & Befundung</span>
@@ -526,7 +582,7 @@
                     <p>"Als Elektrotechnik-Betrieb brauchten wir eine Website, die unsere Leistungen klar darstellt.
                         Murix hat das perfekt umgesetzt – modern, schnell und mit persönlicher Betreuung."</p>
                     <div class="testimonial-author">
-                        <img src="testimonials/et-sl_small.png" alt="ET-SL Logo" class="author-avatar-img">
+                        <img src="testimonials/et-sl_small.png" alt="ET-SL Logo" class="author-avatar-img" width="435" height="352" loading="lazy" decoding="async">
                         <div>
                             <strong>ET-SL GmbH</strong>
                             <span>Elektrotechnik, St. Radegund</span>
@@ -654,7 +710,7 @@
                             <p>Bei unseren <strong>Static Pages</strong> gilt: Es gibt keinen Abo-Zwang. Sobald die
                                 Seite bezahlt ist, gehört sie Ihnen und bleibt online.
                                 Für Unternehmen, die sich jedoch nicht selbst um Hosting, Backups oder
-                                Sicherheitsupdates kümmern möchten, bieten wir unsere **Murix Care Pakete** an.
+                                Sicherheitsupdates kümmern möchten, bieten wir unsere <strong>Murix Care Pakete</strong> an.
                                 Das ist ein optionaler Service für maximale Sorgenfreiheit, aber kein technischer Zwang.
                             </p>
                         </div>
@@ -825,6 +881,32 @@
                 </form>
             </div>
         </div>
+        <section class="section subpage-content">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Ratgeber</span>
+                    <h2 class="section-title">Aktuelle Tipps für Website, SEO & IT</h2>
+                    <p class="section-subtitle">Praxisnahe Artikel für KMU, die online besser gefunden werden und ihre digitale Basis sauber aufstellen wollen.</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card reveal">
+                        <h3>Website-Relaunch ohne Rankingverlust</h3>
+                        <p>Welche Schritte wichtig sind, damit eine neue Website nicht nur schöner aussieht, sondern bei Google stabil bleibt.</p>
+                        <a href="blog/website-relaunch-ohne-rankingverlust" class="read-more">Artikel lesen</a>
+                    </article>
+                    <article class="blog-card reveal" data-delay="100">
+                        <h3>Lokales SEO für Unternehmen in Graz</h3>
+                        <p>So werden Dienstleister, Handwerker und lokale Betriebe dort sichtbar, wo Kunden wirklich suchen.</p>
+                        <a href="blog/lokales-seo-graz-kmu" class="read-more">Artikel lesen</a>
+                    </article>
+                    <article class="blog-card reveal" data-delay="200">
+                        <h3>Microsoft 365 sicher einführen</h3>
+                        <p>Ein kompakter Leitfaden für KMU, die E-Mail, Teams, OneDrive und Sicherheit professionell aufsetzen wollen.</p>
+                        <a href="blog/microsoft-365-kmu-sicher-einfuehren" class="read-more">Artikel lesen</a>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ==================== FOOTER ==================== -->
@@ -849,11 +931,12 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontakt</h4>
+                    <h4>Ratgeber</h4>
                     <ul>
-                        <li><a href="mailto:hello@murix.at">hello@murix.at</a></li>
-                        <li><span>Waltendorfer Hauptstraße 84B</span></li>
-                        <li><span>8010 Graz, Steiermark</span></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="was-kostet-eine-website">Website-Kosten</a></li>
+                        <li><a href="static-vs-cms">Static vs CMS</a></li>
+                        <li><a href="website-erstellen-lassen">Website erstellen lassen</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

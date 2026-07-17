@@ -2,79 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://murix.at/</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/webdesign-graz</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/seo-graz</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/microsoft-365</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.9</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/ueber-uns</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/was-kostet-eine-website</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/website-erstellen-lassen</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/static-vs-cms</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/blog</loc>
+        <lastmod>2026-07-17</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/blog/website-relaunch-ohne-rankingverlust</loc>
+        <lastmod>2026-07-17</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/blog/lokales-seo-graz-kmu</loc>
+        <lastmod>2026-07-17</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/blog/microsoft-365-kmu-sicher-einfuehren</loc>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/webdesign-handwerker</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/webdesign-aerzte</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/webdesign-gastronomie</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/webdesign-immobilien</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.7</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/webdesign-steiermark</loc>
-        <lastmod>2026-04-30</lastmod>
+        <lastmod>2026-07-17</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
