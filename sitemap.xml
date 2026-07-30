@@ -50,9 +50,21 @@
     </url>
     <url>
         <loc>https://murix.at/blog</loc>
-        <lastmod>2026-07-17</lastmod>
+        <lastmod>2026-07-30</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/blog/website-pflege-kmu-checkliste</loc>
+        <lastmod>2026-07-30</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://murix.at/blog/pagespeed-website-ladezeit-seo</loc>
+        <lastmod>2026-07-30</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://murix.at/blog/website-relaunch-ohne-rankingverlust</loc>
